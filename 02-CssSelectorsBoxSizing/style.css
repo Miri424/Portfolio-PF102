@@ -1,0 +1,45 @@
+body {
+ background-color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .header {
+ background-color: red;
+} 
+
+.container {
+width: 1100px;
+/*background color: red; */
+padding-top: 0px;
+padding-bottom: 20px;
+padding: 20px 0px;
+margin: 0px auto;
+}
+.logo {
+    display: inline-block;
+    margin-right: 0px;
+    color: white;
+    font-weight: 100px;
+    
+}
+.navBox {
+ display: inline-block;
+ .navItem {
+color: white;
+text-decoration: none;
+margin: 0px 10px;
+word-spacing: 0px;
+ }
+ 
+
+
+
+ }
+ 
+
+ 
+}
