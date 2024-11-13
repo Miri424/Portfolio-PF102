@@ -1,0 +1,172 @@
+*  {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.SKILLS{
+    display: flex;
+        width: 1070px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px rgb(229, 22, 22) solid;
+        height: 390px;
+        margin-top: 0px;
+        border-radius: 35px;
+        color: rgb(229, 22, 22);
+        border-top-right-radius: 40px ;
+        border-top-left-radius: 40px;
+        box-shadow: rgb(229, 22, 22) 4px 4px 14px ;
+        transition: 2s;
+        
+}
+
+.quadro1 {
+    height: 120px;
+
+}
+.imgg1 {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: -20px;
+}
+.quadro2 {
+    padding-top: 46px;
+    padding-left: 14px;
+    
+}
+.css {
+    margin-top: 48px;
+    margin-left: px;
+}
+.img2 {
+    width: 50px;
+    height: 50px;
+    margin-left: -66px; 
+    border-radius: 90px ;
+    margin-top: -39px;
+}
+.quadro3 {
+    /* margin-top: 110px ;
+    margin-left: -20px; */
+    
+}
+.js {
+    margin-top: 240px;
+    margin-left: -51px;
+}
+.skil {
+    width: 399px;
+    border-right: 2px red solid;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    box-shadow: rgb(229, 22, 22) 2px 2px 16px ;
+}
+.ann {
+    width: fit-content;
+    height: 390px;
+    box-shadow: rgb(229, 22, 22) 7px 1px 30px 1px;
+    border-radius: 39px ;
+    opacity: 0.4;
+
+}
+.img3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    margin-top: -329px ;
+    margin-left: -116px ;
+}
+.html1 {
+    margin-top: 48.8px;
+}
+.css1 {
+    margin-top: 129px;
+    margin-left: -169px;
+}
+.js11 {
+    margin-top: 243px;
+    margin-left: -140px;
+}
+.ttt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.box1 {
+    display: none;
+}
+
+ @media only screen and (max-width: 662px){
+    .SKILLS {
+      display: none;
+} 
+
+.box1 {
+    margin-top: 190px;
+    display: flex;
+    border: red 1px solid;
+    flex-direction: row;
+    transition: 1.4 ease-out;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 12px;
+    background-image: url(/07-portfolio/assets/images/PortLogo.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgb(229, 22, 22) 4px 4px 14px ;
+}
+
+.image1 {
+    width: 50px;
+    height: 50px;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+ 
+.html2 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.css2 {
+    margin-top: 90px;
+    margin-left: -160px;
+}
+.js12 {
+    margin-left: -160px;
+    margin-top: 55px;
+}
+ }
+ 
+@media only screen and (max-width: 992px) {
+    .SKILLS {
+       width: 720px;
+       margin-top: 100px;
+       height: 290px;
+        transition: 1s ease-in-out;
+    }
+    
+    .ann {
+        width: 370px;
+        height: 290px;
+    }
+    .skil {
+        width: 370px;
+        transition: 1.4s ease-in-out;
+    }
+
+} 

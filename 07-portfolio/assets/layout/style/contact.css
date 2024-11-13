@@ -1,0 +1,71 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ .container {
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+ }
+ .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    height: 600px;
+    width: 950px;
+    border-radius: 24px;
+    box-shadow: 6px 12px 12px rgba(255, 0, 0, 0.753);
+  }
+  .name-ipt {
+    width: 55%;
+    padding-top: 9.5px;
+    border-radius: 13px;
+    padding-bottom: 9.5px;
+    border: none;
+    
+  }
+  .name-ipt::placeholder {
+    color: #000000;
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 4px;
+    opacity: 0.3;
+    border: none;
+  }
+
+  p {
+    padding-bottom: 15px;
+  }
+  input {
+    border-radius: 5px;
+    background-color: #E1D6D6D9 ;
+  }
+  button {
+    padding: 15px 40px;
+    color: blanchedalmond;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s ease;
+    border-radius: 8px;
+  }
+  button:hover {
+    background-color: #449;
+    border-radius: 8px;
+  }  
+  .h2 {
+    margin-bottom:70px;
+  }
+  @media only screen and (max-width:662px) {
+    .form {
+        height: auto;
+        width: 70%;
+    }
+  } 

@@ -1,0 +1,88 @@
+*  {
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+}
+.html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(26, 22, 22);
+}
+.Header {
+   display: flex;
+}
+.BrandName {
+    margin: -2px;
+}
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    color: white;
+}   
+.LeftSide {
+    margin: 25px;
+    color: white;
+}
+ .RightSide {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-right: 5vh;
+
+    
+    
+ }
+ .links {
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    margin-right: 50px;
+    list-style: none;
+    color: white;
+
+ }
+ .links a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+
+ }
+ .links a:hover{
+ background-color: rgb(93, 151, 51);
+ 
+ }
+ .burger {
+    width: auto;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+    .LeftSide {
+        font-size: smaller;
+    }
+    .RightSide {
+        display: flex;
+        margin:auto;
+        font-size: small;
+    }
+    .burger {
+        display: none;
+    }
+ } 
+ @media only screen and (max-width:662px) {
+    .RightSide {
+        display: none;
+        }
+    .burger {
+        display: flex;
+        width: 600px;
+
+    }
+    
+
+}
