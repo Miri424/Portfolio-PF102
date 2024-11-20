@@ -1,0 +1,11 @@
+.brandCnt {
+    border: 2px black solid;
+    background-color: #000000;
+    height: 122px;
+}
+.brands {
+    @include flexBox (row, space-evenly, center);
+    margin-top: 3%;
+    flex-wrap: wrap;
+    gap: 20px
+}

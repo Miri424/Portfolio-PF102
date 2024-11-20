@@ -1,0 +1,20 @@
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 38px;
+    padding: 9px 0px;
+    // @include flexBox;
+    display: flex;
+    justify-content: space-between;
+    @include satoshi-typography;
+
+}
+
+.headerTitle {
+    @include flexBox(row, space-between,);
+}
+.headerContainer {
+   @include flexBox(row, space-between);
+   width: 100%;
+}
+

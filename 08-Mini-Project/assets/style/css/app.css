@@ -1,0 +1,674 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  display: flex;
+  color: white;
+  list-style: none;
+  text-decoration: underline;
+}
+
+.navbarLi {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 38px;
+  padding: 9px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.backgroundImg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section3 {
+  color: black;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bannerContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  text-align: start;
+  width: 80%;
+}
+
+.titleCnt {
+  color: black;
+  font-weight: 700;
+  letter-spacing: -2px;
+  display: inline-block;
+  margin-right: 763px;
+  font-family: "Integral", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+  width: 577px;
+  height: 173px;
+  margin-top: 103px;
+  text-align: start;
+}
+
+.descCnt .desc {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: start;
+  width: 605px;
+  height: 33px;
+  margin-top: 32px;
+  transform: translate(2%, -25%);
+  color: black;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buttonCnt .shopNow {
+  background: #000;
+  transform: translate(6%, 90%);
+  color: #fff;
+  width: 18%;
+  font-size: 1rem;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.6px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttonCnt .shopNow:hover {
+  background: #444;
+}
+
+.altDescCnt {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 50%;
+  transform: translate(0%, 120%);
+  letter-spacing: 2px;
+}
+
+.altDescCnt div {
+  color: black;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  width: 107px;
+  height: 54px;
+}
+
+.twoHund {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.twoThousand {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.threeTho {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.inter {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 141px;
+  height: 22px;
+  white-space: nowrap;
+}
+
+.highQuality {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 156px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  white-space: nowrap;
+}
+
+.happy {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 126px;
+  height: 22px;
+  white-space: nowrap;
+}
+
+.brandCnt {
+  border: 2px black solid;
+  background-color: #000000;
+  height: 122px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.offerBox {
+  background-color: black;
+  color: white;
+  font-family: "Integral", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+  height: 200px;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  transform: translate(0, -48%);
+}
+
+.offerTitle {
+  width: 65%;
+  padding-left: 70px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.offerButtons {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.subscribeButton {
+  background-color: #ffffff;
+  width: 349px;
+  height: 63px;
+  border-radius: 62px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.6px;
+  cursor: pointer;
+}
+
+.mailimg {
+  background-color: #ffffff;
+  border-radius: 62px;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.mailInput {
+  width: auto;
+  height: 40px;
+  border: none;
+  border-radius: 62px;
+  margin-bottom: 22px;
+  padding: 12px;
+  margin-left: 5px;
+  position: absolute;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.emailBox {
+  border-radius: 62px;
+  border: none;
+  background-color: #ffffff;
+  padding: 4px;
+  width: 349px;
+  height: 62px;
+  padding: 12px 16px 12px 16px;
+  gap: 12px;
+  border-radius: 62px;
+}
+
+.email {
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerleftSide {
+  width: 248px;
+  height: 177px;
+  transform: translate(0%, -20%);
+}
+.footerleftSide h1 {
+  margin-bottom: 25px;
+}
+.footerleftSide p {
+  margin-bottom: 35px;
+}
+
+.footerlink {
+  padding: 40px 20px;
+  display: flex;
+  height: 240px;
+  transform: translate(0%, -18%);
+  justify-content: center;
+  align-items: center;
+}
+
+.footerlink1 {
+  width: 181px;
+  padding: 40px 20px;
+  transform: translate(39%, -19%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLi {
+  list-style: none;
+  text-decoration: none;
+}
+.footerLi a {
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.company {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.help {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.FAQ {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.RESOURCES {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+}
+
+.last-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr2 {
+  background-color: rgba(0, 0, 0, 0.256);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.linksCnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbarA {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.brandName {
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: "Integral", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+.InputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  background-color: #F0F0F0;
+  border-radius: 22px;
+  width: 100%;
+  height: 48px;
+  border: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-left: 40px;
+}
+
+.input {
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+
+.searchBox {
+  width: 87%;
+  border: none;
+  background-color: #F0F0F0;
+  height: 60%;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 933px) {
+  .linksCnt {
+    display: none;
+  }
+  .searchBox {
+    display: none;
+  }
+  .input {
+    background-color: white;
+  }
+  .InputBox {
+    width: 0%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .burger {
+    display: flex;
+    height: 24px;
+    margin-top: 134px;
+    margin-left: 16px;
+    padding: 4.88px 2.63px 4.88px 2.63px;
+  }
+}
+.cardCnt {
+  margin-bottom: 200px;
+}
+
+.newArrivals {
+  margin: 72px 0;
+  font-family: "Integral", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 57.6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin-bottom: 10px;
+}
+
+.discount {
+  font-size: none;
+}
+
+.cardImgg {
+  border-radius: 20px;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.discount {
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  border-radius: 62px;
+  color: #FF3333;
+  margin-left: 10px;
+  padding-top: 6px;
+  padding-right: 14px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: -4px;
+  width: auto;
+}
+
+.newArrivalsPrice {
+  display: flex;
+  gap: 8px;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.4px;
+  margin-top: 8px;
+}
+
+.arrivalsOldPrice {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+}
+
+.starImg {
+  margin-top: 8.26px;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonArrivals {
+  cursor: pointer;
+  width: 218px;
+  height: 52px;
+  padding: 16px 54px;
+  gap: 12px;
+  transform: translate(-13%, -290%);
+  border-radius: 62px;
+  border: 1px rgba(0, 0, 0, 0.4549019608) solid;
+  background-color: transparent;
+}
+
+.hr1 {
+  margin-bottom: 240px;
+  width: 75%;
+  margin-left: 180px;
+}
+
+.titlecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  font-family: "Integral", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-left: 70px;
+}
+
+.commentName {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.commentsTitle {
+  margin-left: 70px;
+}
+
+.commentsMainCnt {
+  margin-bottom: 240px;
+}
+
+.commentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 83.42px;
+  width: 90%;
+  margin-left: 70px;
+}
+
+.textBox {
+  padding: 28px, 32px;
+  margin: 40px !important;
+}
+
+.textBox1 {
+  border: 1px black solid;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  padding: 28px;
+}
+
+.commentRate {
+  padding: 1px;
+  display: flex;
+  gap: 6.49px;
+}
+
+.paragraph {
+  padding-top: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+}/*# sourceMappingURL=app.css.map */

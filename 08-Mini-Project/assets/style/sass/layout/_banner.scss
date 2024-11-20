@@ -1,0 +1,120 @@
+.backgroundImg {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  .section3 {
+    color: $primary-color;
+  }
+  .bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .bannerContainer {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -85%);
+    text-align: start;
+    width: 80%; 
+  }
+  .vertical {
+    width: 3px;
+    height: 20px;
+    background-color: #000;
+    // margin: 0 auto;
+    transform: rotate(180deg);
+  }
+  .titleCnt {
+    color: $primary-color;
+    font-weight: 700;
+    letter-spacing: -2px;
+    display: inline-block;
+    margin-right: 763px;
+    @include integral-typography (900, 64px, 64px);
+    width: 577px;
+    height: 173px;
+    margin-top: 103px;
+    text-align: start;
+  }
+  
+  .descCnt .desc {
+    @include satoshi-typography (700, 16px, 22px);
+    text-align: start;
+    width: 605px;
+    height: 33px;
+    margin-top: 32px;
+    transform: translate(2%, -25%);
+    color: $primary-color;
+    color: #00000099;
+    
+  }
+  
+  .buttonCnt .shopNow {
+    background: #000;
+    transform: translate(6%, 90%);
+    color: #fff;
+    width: 18%;
+    font-size: 1rem;
+@include satoshi-typography (500, 16px, 21.6px);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .buttonCnt .shopNow:hover {
+    background: #444;
+  }
+  
+  .altDescCnt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 50%;
+    transform: translate(0%, 120%);
+    letter-spacing: 2px;
+  }
+  
+  .altDescCnt div {
+    color: $primary-color;
+    @include satoshi-typography (700, 40px, 54px);
+    width: 107px;
+    height: 54px;
+  }
+  .twoHund {
+    @include satoshi-typography (700, 40px, 54px)
+
+ }
+  .twoThousand {
+    @include satoshi-typography (700, 40px, 54px)
+  }
+  .threeTho{
+    @include satoshi-typography (700, 40px, 54px);
+
+}
+.inter {
+    @include satoshi-typography (400, 16px, 22px);
+    width: 141px;
+    height: 22px;
+    white-space: nowrap;
+}
+.highQuality {
+    @include satoshi-typography (400, 16px, 22px);
+    width: 156px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    white-space: nowrap;
+
+}
+.happy {
+    @include satoshi-typography (400, 16px, 22px);
+    width: 126px;
+    height: 22px;
+    white-space: nowrap;
+}

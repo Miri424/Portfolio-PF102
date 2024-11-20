@@ -1,0 +1,77 @@
+.cardCnt {
+    margin-bottom: 200px;
+}
+.newArrivals {
+    margin: 72px 0;
+    @include integral-typography (900, 48px, 57.6px);
+    @include flexBox (row, center, center);
+    
+}
+.image {
+    margin-bottom: 10px;
+}
+.discount {
+  
+    font-size: none;
+}
+.cardImgg {
+    border-radius: 20px;
+}
+.cardBox {
+    @include flexBox (row, space-evenly, center);
+  
+}
+.discount {
+    background-color: #FF33331A;
+    border-radius: 62px;
+    color:#FF3333;
+
+    margin-left: 10px;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    // gap: 12px;
+    @include satoshi-typography (200, 15px, 28px);
+    margin-top: -4px;
+    width: auto;
+}
+
+.newArrivalsPrice {
+    display: flex;
+    gap: 8px;
+    @include satoshi-typography (700, 24px , 32.4px);
+    margin-top: 8px;
+}
+.arrivalsOldPrice {
+    color: #00000066;
+    text-decoration: line-through;
+}
+.starImg {
+    margin-top: 8.26px;
+}
+.buttonBox {
+    @include flexBox (row, center, center);
+}
+.buttonArrivals {
+    cursor: pointer;
+    width: 218px;
+    height: 52px;
+    padding: 16px 54px;
+    gap: 12px;
+    transform: translate(-13%,-290%);
+    border-radius: 62px;
+    border: 1px #00000074 solid ;
+    background-color: transparent;
+}
+.hr1 {
+    margin-bottom: 240px;
+    width: 75%;
+    margin-left: 180px ;
+}
+// .containermain {
+//     background-color: #F0F0F0;
+//     width: 1239px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }

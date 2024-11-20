@@ -1,0 +1,43 @@
+.titlecontainer {
+  @include flexBox (row, space-between, center);
+  width: 90%;
+  @include integral-typography (700, 48px, 57.6px);
+  margin-left: 70px;
+}
+.commentName {
+    @include flexBox (row, start);
+    padding-top: 15px;
+}
+.commentsTitle {
+    margin-left: 70px;
+}
+.commentsMainCnt {
+    margin-bottom: 240px
+}
+.commentBox {
+    @include flexBox (row, space-around
+    , center);
+    margin-bottom: 83.42px; 
+    width: 90%;
+    margin-left: 70px;
+   
+}
+.textBox {
+    padding: 28px, 32px;
+   margin: 40px !important;
+}
+.textBox1 {
+    border:1px black solid;
+    border-radius: 20px ;
+    border-color: #0000001A;
+    padding: 28px;
+}
+.commentRate {
+    padding: 1px ;
+    display: flex;
+    gap: 6.49px;
+}
+
+.paragraph {
+    padding-top: 12px;
+}

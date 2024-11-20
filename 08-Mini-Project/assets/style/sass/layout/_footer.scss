@@ -1,0 +1,139 @@
+.footer {
+  background-color: #f0f0f0;
+}
+
+.offerBox {
+  background-color: black;
+  color: white;
+  @include integral-typography(700, 40px, 45px);
+  @include flexBox;
+  margin-bottom: 120px;
+  height: 200px;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  transform: translate(0,-48%);
+}
+.offerTitle {
+  width: 65%;
+  padding-left: 70px;
+}
+.rightSide {
+  @include flexBox(column-reverse, space-between, center);
+  margin-left: 30px;
+  margin-right: 50px;
+}
+.offerButtons {
+  @include flexBox(column-reverse);
+  gap: 20px;
+}
+.subscribeButton {
+  background-color: #ffffff;
+  width: 349px;
+  height: 63px;
+  border-radius: 62px;
+  @include satoshi-typography(500, 16px, 21.6px);
+  cursor: pointer;
+}
+.mailimg {
+  background-color: #ffffff;
+  border-radius: 62px;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+.mailInput {
+  width: auto;
+  height: 40px;
+  border: none;
+  border-radius: 62px;
+  margin-bottom: 22px;
+  padding: 12px;
+  margin-left: 5px;
+  position: absolute;
+  @include satoshi-typography(400, 16px, 21.6px) //   background-color: #ffffff;
+;
+}
+.emailBox {
+  border-radius: 62px;
+  border: none;
+  background-color: #ffffff;
+  padding: 4px;
+  width: 349px;
+  height: 62px;
+  padding: 12px 16px 12px 16px;
+  gap: 12px;
+  border-radius: 62px;
+}
+.email {
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+.footerContainer {
+  @include flexBox(row, space-between, center);
+}
+.footerleftSide {
+  width: 248px;
+  height: 177px;
+  transform: translate(0%, -20%);
+  h1 {
+    margin-bottom: 25px;
+  }
+  p{
+    margin-bottom: 35px;
+    
+  }
+}
+
+.footerlink {
+  padding: 40px 20px;
+  display: flex;
+  height: 240px;
+  transform: translate(0%, -18%);
+  justify-content: center;
+  align-items: center;
+}
+.footerlink1 {
+  width: 181px;
+  padding: 40px 20px;
+  transform: translate(39%, -19%);
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLi {
+  list-style: none;
+  text-decoration: none;
+
+  a {
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    margin-top: 15px;
+    text-decoration: none;
+
+  }
+}
+.company {
+  @include satoshi-typography(500, 16px, 18px);
+  letter-spacing: 3px;
+}
+.help {
+  @include satoshi-typography(500, 16px, 18px);
+  letter-spacing: 3px;
+}
+.FAQ {
+  @include satoshi-typography(500, 16px, 18px);
+  letter-spacing: 3px;
+}
+.RESOURCES {
+  @include satoshi-typography(500, 16px, 18px);
+  letter-spacing: 3px;
+}
+.last-line {
+    @include flexBox (row, space-between,center)
+}
+.hr2 {
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 100%;
+    margin-bottom: 30px;
+}
