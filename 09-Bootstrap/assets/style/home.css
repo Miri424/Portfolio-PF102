@@ -1,0 +1,249 @@
+.visionTitle {
+  padding-bottom: 240px;
+  text-align: center;
+
+  p {
+    color: #00adb5;
+    text-align: start;
+    margin: 20px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  h2 {
+    color: #eeeeee;
+    align-items: center;
+    text-align: start;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 61.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    max-width: 994px;
+  }
+}
+.bg-Element {
+  background-color: #393e46;
+  border-radius: 8px;
+}
+.visionCnt {
+  text-align: center;
+  align-items: center;
+  height: 340px;
+  padding: 144px 20px;
+}
+.simple {
+  color: white;
+}
+.detailsCnt {
+  color: white;
+  padding-bottom: 120px;
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.detailMain {
+  display: flex;
+  gap: 40px;
+}
+.card {
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.interimg {
+  max-width: 100%;
+}
+.altTitle {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  padding-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.interCnt {
+  align-items: center;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 8px;
+}
+.inter {
+  color: white;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 61.2px;
+  letter-spacing: -2%;
+  padding-bottom: 8px;
+}
+.interAlt {
+  color: #ffff;
+}
+.cardCnt p {
+  color: #ffff;
+  opacity: 0.7;
+}
+.cardCnt h4 {
+  color: #ffff;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.card {
+  max-width: 100%;
+}
+.card-body {
+  max-width: 100%;
+}
+.interSec {
+  overflow: hidden;
+}
+.engageCnt {
+  transform: translate(60%, -360%);
+  color: white;
+}
+.engageTitle h3 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 61.2px;
+  letter-spacing: -2%;
+  padding-bottom: 8px;
+}
+.engageTitle p {
+  transform: translate(4%);
+  opacity: 0.7;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-skip-ink: none;
+}
+.elevateCnt {
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.elevateTitle {
+  text-align: start;
+  align-items: start;
+  margin-left: 120px;
+  h2 {
+    color: #eeeeee;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 61.2px;
+    letter-spacing: -8%;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 32px;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  button {
+    max-width: 360px;
+    padding: 16px 48px 16px 48px;
+    gap: 4px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    opacity: 0px;
+    background-color: #008A90;
+    color: #ffffff;
+  }
+}
+.elevateBox {
+  background-color: #393E46;
+  border-radius: 48px;
+  padding: 48px;
+  text-align: start;
+}
+.elevateBox1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .detailMain {
+    padding-top: 20px;
+    gap: 0px;
+    display: block;
+  }
+.elevateCnt {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .simple {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .elevateTitle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .midSideFoot {
+    display: none;
+  }
+  .visionTitle {
+    h2 {
+      color: #eeeeee;
+      align-items: center;
+      text-align: start;
+      font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 56.2px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-decoration-skip-ink: none;
+      max-width: 994px;
+    }
+  }
+  .visionCnt {
+    text-align: center;
+    align-items: center;
+    height: 340px;
+    padding: 50px 4px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .interSec {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 660px) {
+  .midSideFoot {
+    display: none;
+  }
+  .rightSideFoot {
+    display: none;
+  }
+  .midSideFoot p {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+}
+.nav {
+ background-color: #222831;
+ width: 100%;
+}
+.navbarMain {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+    flex-wrap: nowrap ;
+}
+.leftSide {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     align-items: center;
+}
+.midSide {
+    display: flex;
+    p {
+        padding:0px 16px;
+        padding-top: 15px;
+    }
+}
+.buttonStarted {
+    background-color: transparent;
+    color: white;
+    padding: 10px 14px;
+    border: 1px #EEEEEE solid;
+    border-radius: 8px;
+}
