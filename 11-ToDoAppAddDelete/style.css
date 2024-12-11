@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9; /* Soluk gri zemin */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    height: 90vh;
+    background-color: #2c3e50;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 12px 12px 4px rgba(65, 178, 182, 0.3);
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+.titleContainer {
+    height: 100%;
+    margin: 30px;
+}
+
+.buttonAdd {
+    background-color: #27ae60;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonAdd:hover {
+    background-color: #2ecc71;
+}
+
+.buttonClear {
+    background-color: #c0392b;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonClear:hover {
+    background-color: #e74c3c;
+}
+
+.mainButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.addInput {
+    width: 70%;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.addInput:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.titleHeader {
+    background-color: #34495e;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    font-style: italic;
+}
+
+.taskMainCnt {
+    background-color: #bdc3c7;
+    height: 50%;
+    border-radius: 12px;
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+.azBtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.azBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .mainButtons {
+        flex-direction: column;
+        align-items: stretch; /* Butonları dikey hizala */
+    }
+
+    .addInput {
+        width: 100%;
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .buttonAdd, .buttonClear, .azBtn {
+        width: 100%;
+        margin-top: 10px; /* Butonları dikey hizalamak için mesafe */
+    }
+
+    .taskMainCnt {
+        height: auto;
+        padding: 15px;
+    }
+
+    .titleHeader {
+        font-size: 1.5rem; /* Başlık boyutunu küçült */
+        padding: 25px;
+    }
+}
+
+.editButton {
+    background-color: #f39c12; 
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.editButton:hover {
+    background-color: #e67e22; 
+}
+
+@media only screen and (max-width: 800px) {
+    .mainButtons {
+        flex-direction: column; 
+        justify-content: space-between; 
+        gap: 20px;
+    }
+    .container {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .addInput {
+        width: 65%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .buttonAdd, .buttonClear, .azBtn, .editButton {
+        width: 30%;
+        margin-top: 0;
+    }
+}
