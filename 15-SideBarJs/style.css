@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ background-color:white;
+}
+
+.container {
+    background-color: #03546e;
+    width: 280px;
+    height: 900px;
+    color:black;
+    opacity: 0.8
+}
+.home , .about , .services , .portfolio, .contact {
+    color: white;
+    transition: 0.3s;
+    padding: 10px 0px;
+    cursor: pointer;
+    padding: 10px;
+}
+.home:hover {
+    background-color: #03485c;
+}
+.about:hover {
+    background-color: #03485c;
+}
+.services:hover {
+    background-color: #03485c;
+}
+.portfolio:hover {
+    background-color: #03485c;
+}
+.contact:hover {
+    background-color: #03485c;
+}
+.close {
+    text-align: end;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+}
+.transform {
+    transform: translate(-100%);
+    transition: 0.3s;
+}
+.open {
+    background-color: #03485c;
+    color: white;
+    padding: 1rem;
+    display: none;
+    margin: 10px;
+}

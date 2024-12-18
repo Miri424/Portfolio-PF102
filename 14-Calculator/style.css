@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+.title {
+    margin-bottom: 18px;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px red solid;
+    padding: 120px;
+}
+.calcMain {
+    background-color: bisque;
+    margin-top: 130px;
+    width: 420px;
+    height: 400px;
+    padding-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inputCnt {
+    .input {
+        margin-left: 12px;
+    }
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    button {
+        margin-top: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(228, 226, 226);
+        border-radius: 9px;
+        padding: 10px;
+    
+
+    }
+}
