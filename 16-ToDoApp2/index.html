@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Best To Do App So Far</h2>
+        
+        <form id="taskForm">
+            <input type="text" id="input1" placeholder="Enter Task" maxlength="22"/>
+            <div class="validation"></div>
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+    
+        <button id="allPendingsBtn" onclick="toggleTask()">All Pendings</button>
+        <button id="allCompletedBtn">All Completed Tasks</button>
+        <button id="clear">Clear All</button>
+        <button id="allTasks">All Tasks</button>  
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th id="taskDate">Task Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./test.js"></script>
+  </body>
+</html>
