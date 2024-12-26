@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+  .container {
+    margin-top: 160px ;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .sign-in-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sign-in-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .sign-in-form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    margin-bottom: 21px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition :0.3s ease-in-out;
+  }
+  
+  .sign-in-form button:hover {
+    opacity: 0.7;
+  }
+
+
+  .passwordFa {
+    position: relative;
+  }
+
+  .fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 18px
+  }
+  

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1365b8, #4b0082);
+    color: #333;
+  }
+  .container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 450px;
+  }
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .container input:focus {
+    outline: none;
+    border: 1px solid #1e90ff;
+    box-shadow: 0 0 5px rgba(20, 115, 210, 0.5);
+  }
+   .validation {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: -5px;
+   margin-bottom: 10px;
+  }
+  .SignUp {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .SignUp:hover {
+    background: #155dbe;
+  }
+  .passwordFa {
+    position: relative;
+  }
+
+  .fa-solid {
+    position: absolute;
+    right: 10px;
+    top: 12px
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px 20px;
+    }
+    .container h2 {
+      font-size: 1.5em;
+    }
+  }

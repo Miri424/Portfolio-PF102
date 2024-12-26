@@ -5,8 +5,12 @@
 }
 
 body {
-    background-color: #f4f4f9; /* Soluk gri zemin */
+    /* background-color: #f4f4f9; Soluk gri zemin */
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body.darkMode {
+    background-color: black;
 }
 
 .container {

@@ -112,7 +112,6 @@ function toDoList() {
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
 
-        // Stil əlavə etmə
         deleteBtn.style.padding = "8px 16px";
         deleteBtn.style.fontSize = "14px";
         deleteBtn.style.cursor = "pointer";
@@ -157,3 +156,4 @@ function checkValidate(input, validation, errorMessage) {
         input.style.border = "";
     }
 }
+
