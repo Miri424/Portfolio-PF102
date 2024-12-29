@@ -6,11 +6,10 @@ const username = document.querySelector(".username");
 const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 const signUpBtn = document.querySelector(".SignUp");
-const form = document.querySelector(".form");
 const validation = document.querySelector(".validation");
 
 function registerUser() {
-    const enteredUsername = username.value.trim();
+    const enteredUsername = username.value.trim(); 
     const enteredEmail = email.value.trim();
     const enteredPassword = password.value.trim();
 
@@ -22,6 +21,7 @@ function registerUser() {
 
     if (sameUser) {
         validation.textContent = "Username or Email already has been taken";
+        validation.style.color = "red"
         return;
     }
 
@@ -30,6 +30,8 @@ function registerUser() {
         email: enteredEmail,
         password: enteredPassword,
         id: Date.now(),
+        wishList: [],
+        isLogged: false,
     };
 
     users.push(user);
@@ -42,7 +44,7 @@ function registerUser() {
 signUpBtn.addEventListener("click", (e) => {
     e.preventDefault();
     registerUser();
-    form.reset();
+   
 });
 
 const eyeBtn = document.querySelector(".fa-eye");

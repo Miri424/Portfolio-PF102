@@ -10,26 +10,40 @@ function userLogInCheck() {
 
     if (!usernameOrEmail || !password) {
         validate.textContent = "Please enter both username/email and password.";
+        validate.style.color = "red"
         return;
     }
 
     const users = getDataFromLocal("users");
+    
+    const activeUser = users.find((user) => user.username.toLowerCase() === usernameOrEmail || user.email.toLowerCase() === usernameOrEmail)
 
     const checkUser = users.some((user) => {
-        const normalizedUsernameOrEmail = usernameOrEmail.toLowerCase();
-        return (user.username.toLowerCase() === normalizedUsernameOrEmail || user.email.toLowerCase() === normalizedUsernameOrEmail) && user.password === password;
+        const UsernameOrEmail = usernameOrEmail.toLowerCase();
+        return (user.username.toLowerCase() === usernameOrEmail || user.email.toLowerCase() === usernameOrEmail) && user.password === password;
     });
 
     if (checkUser) {
-        window.location.href = "./home.html"; 
+            Swal.fire({
+                title: "User Successfully Logged In",
+                icon: "success",
+                draggable: true
+              })
+                .then((result) => {
+                 activeUser.isLogged = true;
+                 setDataInLocal("users", users);
+                 window.location.href = "./index.html"
+    })
     } else {
         validate.textContent = "Email or Username does not exist!";
+        validate.style.color = "red"
     }
 }
 
 signIn.addEventListener("click", (e) => {
     e.preventDefault();
     userLogInCheck();
+
 });
 
 eyeBtn.addEventListener("click", () => {

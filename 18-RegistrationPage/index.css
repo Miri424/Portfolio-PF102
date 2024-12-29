@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Genel body stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header ve navbar stili */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navBar {
+    display: flex;
+    gap: 20px;
+}
+
+.navBar a {
+    color: white;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navBar a:hover {
+    background-color: #E74C3C;
+}
+
+.navbarBtnBar {
+    display: flex;
+    gap: 10px;
+}
+
+.navBarBtn {
+    background-color: #E74C3C;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navBarBtn:hover {
+    background-color: #C0392B;
+}
+
+/* Responsive tasarım */
+@media screen and (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbarBtnBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navBar a {
+        margin: 10px 0;
+    }
+
+    .navbarBtnBar .navBarBtn {
+        margin: 5px 0;
+    }
+}
+
+/* Kart Wrapper */
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Esnek düzen için grid */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Kart */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Kart Görseli */
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Kart Başlığı */
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343a40;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Kart Fiyatı */
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E74C3C;
+    margin: 5px 0;
+    
+}
+
+.card i {
+    font-size: 18px;
+    color: #E74C3C;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card i:hover {
+    color: #E74C3C;
+}
+
+.products {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+
