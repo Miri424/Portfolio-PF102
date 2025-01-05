@@ -287,6 +287,10 @@ function createCard(arr) {
      const cardPrice = document.createElement("p");
      cardPrice.textContent = `$${element.price}`;
  
+      const addToCartBtn = document.createElement("button")
+      addToCartBtn.textContent = "Add to cart"
+      addToCartBtn.className = "btn btn-warning"
+
      const icon = document.createElement("i");
      icon.className = "fa-regular fa-heart";
  
@@ -301,18 +305,16 @@ function createCard(arr) {
        const findIdx = activeUser.wishList.findIndex((p) => p === element.id);
  
        if (findIdx == -1) {
-         activeUser.wishList.push(element.id);
+         activeUser.wishList.push(element.id);  
          icon.className = "fa-solid fa-heart"
        } else {
          activeUser.wishList.splice(findIdx, 1);
          icon.className = "fa-regular fa-heart"
-
         }
-  
        setDataInLocal("users", users);
      });
  
-     card.append(cardImg, cardTitle, cardDesc, cardPrice, icon);
+     card.append(cardImg, cardTitle, cardDesc, cardPrice, icon, addToCartBtn);
      wrapper.append(card);
    });
  

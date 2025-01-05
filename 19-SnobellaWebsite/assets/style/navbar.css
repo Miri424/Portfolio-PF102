@@ -1,0 +1,159 @@
+header {
+    background-color: rgb(16, 84, 50);
+    padding-bottom: 10px;
+    color: white;
+}
+
+.holder {
+    display: flex;
+}
+.navHolder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navleftSide {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navRightSide {
+    display: flex;
+    gap: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navRightSide :last-child {
+    /* margin-right: 120px; */
+}
+
+
+.leftHolder {
+    display: flex;
+    margin-top: 20px;
+    width: 71%;
+    align-items: center;
+}
+
+.leftHolder h2 {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.leftHolder input {
+    width: 65%;
+    margin-left: 30px;
+    margin-top: 9px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 32px;
+    border: none;
+    background-color:#F7F9FC;
+    padding-left: 10px;
+}
+
+.leftHolder img {
+    background-color:#F7F9FC;
+    height: 32px;
+    margin-top: 9px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+}
+
+.rightHolder {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 20px;
+}
+
+.inputImg {
+    position: relative;
+    transform: translateX(-90%);
+}
+
+#searchInp:focus {
+    border: none;
+}
+
+.rightHolder p {
+    margin-top: 0;
+    font-size: 14px; 
+    margin-bottom: 0;
+}
+
+.rightHolder img {
+    max-width: 25px;
+    height: 20px;
+}
+
+.productOptions {
+    display: flex;
+    margin-top: 35px;
+    gap: 40px;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+/* Responsive düzenleme */
+@media (max-width: 768px) {
+    .navHolder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navRightSide {
+        gap: 30px;
+    }
+
+    .leftHolder {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .leftHolder input {
+        width: 80%; /* Input genişliğini küçült */
+        margin-left: 0;
+    }
+
+    .leftHolder img {
+        margin-top: 10px;
+    }
+
+    .rightHolder {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .productOptions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rightHolder {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rightHolder img {
+        max-width: 20px;
+        height: 18px;
+    }
+
+    .navRightSide {
+        gap: 20px;
+    }
+}

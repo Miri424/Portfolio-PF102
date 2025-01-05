@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Poppins';
+}
+
+
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+   /* border: red solid 2px ; */
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
