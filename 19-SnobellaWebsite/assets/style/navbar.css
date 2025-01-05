@@ -104,7 +104,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* Responsive düzenleme */
 @media (max-width: 768px) {
     .navHolder {
         flex-direction: column;
@@ -122,7 +121,7 @@ header {
     }
 
     .leftHolder input {
-        width: 80%; /* Input genişliğini küçült */
+        width: 80%; 
         margin-left: 0;
     }
 
