@@ -240,86 +240,87 @@ const products = [
     }
   }
 ] 
-import { setDataInLocal, getDataFromLocal, } from "./Storage-helpers.js";
+import { setDataInLocal, getDataFromLocal } from "./Storage-helpers.js";
 
 const wrapper = document.createElement("div");
 wrapper.classList.add("card-wrapper");
 
 const users = getDataFromLocal("users") || [];
 
-
-const activeUser = users.find((i) => i.isLogged == true)
+const activeUser = users.find((i) => i.isLogged == true);
 console.log(activeUser);
 
-const loginBtn=document.querySelector(".login")
-const registerBtn=document.querySelector(".register")
-const logoutBtn=document.querySelector(".logOut")
-const userName = document.querySelector(".userName")
-if(activeUser){
-    loginBtn.style.display="none"
-    registerBtn.style.display="none"
-    logoutBtn.style.display="block"
-    userName.textContent = activeUser.username
-    alert(`Hos geldiniz ${activeUser.username} !`)
+const loginBtn = document.querySelector(".login");
+const registerBtn = document.querySelector(".register");
+const logoutBtn = document.querySelector(".logOut");
+const userName = document.querySelector(".userName");
+const profileImg = document.querySelector("#navProfileImg");~~
+
+if (activeUser) {
+  loginBtn.style.display = "none";
+  registerBtn.style.display = "none";
+  logoutBtn.style.display = "block";
+  userName.textContent = activeUser.username;
+
+  if (activeUser.profilePic) {
+    profileImg.src = activeUser.profilePic;
   }
+}
 
-  logoutBtn.addEventListener("click" , ()=>{
-    activeUser.isLogged=false
-    setDataInLocal("users", users)
-  });
-
-
+logoutBtn.addEventListener("click", () => {
+  activeUser.isLogged = false;
+  setDataInLocal("users", users);
+});
 
 function createCard(arr) {
   arr.forEach((element) => {
-     const card = document.createElement("div");
-     card.classList.add("card");
- 
-     const cardImg = document.createElement("img");
-     cardImg.setAttribute("src", element.image);
- 
-     const cardTitle = document.createElement("h3");
-     cardTitle.textContent = `${element.title.slice(0, 19)}${element.title.length > 19 ? "..." : ""}`;
-     
-     const cardDesc = document.createElement("span");
-     cardDesc.textContent = `${element.description.slice(0, 100)}...`;
-     
-     const cardPrice = document.createElement("p");
-     cardPrice.textContent = `$${element.price}`;
- 
-      const addToCartBtn = document.createElement("button")
-      addToCartBtn.textContent = "Add to cart"
-      addToCartBtn.className = "btn btn-warning"
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-     const icon = document.createElement("i");
-     icon.className = "fa-regular fa-heart";
- 
-     if (activeUser.wishList.includes(element.id)) {
-      icon.className ="fa-solid fa-heart"
-      icon.style.color = "red"
+    const cardImg = document.createElement("img");
+    cardImg.setAttribute("src", element.image);
+
+    const cardTitle = document.createElement("h3");
+    cardTitle.textContent = `${element.title.slice(0, 19)}${element.title.length > 19 ? "..." : ""}`;
+
+    const cardDesc = document.createElement("span");
+    cardDesc.textContent = `${element.description.slice(0, 100)}...`;
+
+    const cardPrice = document.createElement("p");
+    cardPrice.textContent = `$${element.price}`;
+
+    const addToCartBtn = document.createElement("button");
+    addToCartBtn.textContent = "Add to cart";
+    addToCartBtn.className = "btn btn-warning";
+
+    const icon = document.createElement("i");
+    icon.className = "fa-regular fa-heart";
+
+    if (activeUser.wishList.includes(element.id)) {
+      icon.className = "fa-solid fa-heart";
+      icon.style.color = "red";
     } else {
-      icon.className = "fa-regular fa-heart"
+      icon.className = "fa-regular fa-heart";
     }
 
-     icon.addEventListener("click", (e) => {
-       const findIdx = activeUser.wishList.findIndex((p) => p === element.id);
- 
-       if (findIdx == -1) {
-         activeUser.wishList.push(element.id);  
-         icon.className = "fa-solid fa-heart"
-       } else {
-         activeUser.wishList.splice(findIdx, 1);
-         icon.className = "fa-regular fa-heart"
-        }
-       setDataInLocal("users", users);
-     });
- 
-     card.append(cardImg, cardTitle, cardDesc, cardPrice, icon, addToCartBtn);
-     wrapper.append(card);
-   });
- 
-   document.body.append(wrapper);
- }
- 
+    icon.addEventListener("click", (e) => {
+      const findIdx = activeUser.wishList.findIndex((p) => p === element.id);
 
- createCard(products)
+      if (findIdx == -1) {
+        activeUser.wishList.push(element.id);
+        icon.className = "fa-solid fa-heart";
+      } else {
+        activeUser.wishList.splice(findIdx, 1);
+        icon.className = "fa-regular fa-heart";
+      }
+      setDataInLocal("users", users);
+    });
+
+    card.append(cardImg, cardTitle, cardDesc, cardPrice, icon, addToCartBtn);
+    wrapper.append(card);
+  });
+
+  document.body.append(wrapper);
+}
+
+createCard(products);
