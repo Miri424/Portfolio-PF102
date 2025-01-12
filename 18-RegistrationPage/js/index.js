@@ -256,16 +256,18 @@ const logoutBtn = document.querySelector(".logOut");
 const userName = document.querySelector(".userName");
 const profileImg = document.querySelector("#navProfileImg");~~
 
-if (activeUser) {
-  loginBtn.style.display = "none";
-  registerBtn.style.display = "none";
-  logoutBtn.style.display = "block";
-  userName.textContent = activeUser.username;
+document.addEventListener("DOMContentLoaded", function() {
+  if (activeUser) {
+    loginBtn.style.display = "none";
+    registerBtn.style.display = "none";
+    logoutBtn.style.display = "block";
+    userName.textContent = activeUser.username;
 
-  if (activeUser.profilePic) {
-    profileImg.src = activeUser.profilePic;
+    if (activeUser.profilePic) {
+      profileImg.src = activeUser.profilePic;
+    }
   }
-}
+});
 
 logoutBtn.addEventListener("click", () => {
   activeUser.isLogged = false;

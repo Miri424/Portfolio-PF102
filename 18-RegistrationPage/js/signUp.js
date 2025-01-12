@@ -48,6 +48,8 @@ signUpBtn.addEventListener("click", (e) => {
     registerUser();
 });
 
+
+
 profileImg.addEventListener("click", () => profilePicInput.click());
 profileImg.addEventListener("dragover", (e) => e.preventDefault());
 profileImg.addEventListener("drop", handleDrop);
@@ -72,19 +74,6 @@ function handleDrop(e) {
     e.preventDefault();
     handleFile(e);
 }
-
-// function saveProfileImage(base64) {
-//     const users = getDataFromLocal("users") || [];
-//     const loggedInUserId = getDataFromLocal("loggedInUserId"); 
-//     const updatedUsers = users.map((user) => {
-//         if (user.id === loggedInUserId) {
-//             return { ...user, profilePic: base64 };
-//         }
-//         return user;
-//     });
-
-//     setDataInLocal("users", updatedUsers);
-// }
 
 
 const eyeBtn = document.querySelector(".fa-eye");
