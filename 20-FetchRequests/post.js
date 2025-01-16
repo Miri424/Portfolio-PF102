@@ -2,7 +2,7 @@ const contact = document.querySelector("#contact-title");
 const city = document.querySelector("#city-title");
 const country = document.querySelector("#country-title");
 const form = document.querySelector("#form");
-const BASE_URL = "https://northwind.vercel.app/api";
+const BASE_URL = "http://localhost:3000";
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

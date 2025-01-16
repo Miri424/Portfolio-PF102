@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+    <link rel="stylesheet" href="./assets/style/navbar.css" />
+    <link rel="stylesheet" href="./assets/style/input.css" />
+    <link rel="stylesheet" href="./assets/style/home.css" />
+    <link rel="stylesheet" href="./assets/style/card.css" />
+    <link rel="stylesheet" href="./assets/style/mode.css">
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <nav>
+            <div class="navHolder">
+              <div class="navLeftSide">
+                <h3 style="font-size: 18px; font-weight: 800;">Where in the world?</h3>
+              </div>
+              <div class="navRightSide">
+                <div class="textHolder">
+                    <i class="fa-regular fa-moon" style="cursor: pointer;"></i>
+                    <i class="fa-regular fa-sun" style="display: none; cursor: pointer;"></i>
+                  <span class="darkMode" style="cursor: pointer;">Dark Mode</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Nav End -->
+     <!-- Search Section Start -->
+    <section>
+    <div class="container">
+     <div class="search-sectionHolder">
+        <div class="innerContainer">
+          <div class="searchLeftHolder">
+            <input type="text" class="input" placeholder="Search for a country..."/>
+          </div>
+          <div class="searchRightHolder">
+            <select contextmenu="salam" name="" id="selectFilter">
+              <option value="" hidden>Filter by Region</option>
+              <option class="all" value="">All</option>
+              <option class="europe" value="europe">Europe</option>
+              <option class="asia" value="asia">Asia</option>
+              <option class="africa" value="africa">Africa</option>
+              <option class="americas" value="americas">Americas</option>
+              <option class="ocenia" value="ocenia">Ocenia</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Search Section End -->
+    
+    <!-- Cards Section Start -->
+    <section>
+        <div class="container">
+            <div class="cards">
+              <!--  -->
+            </div>
+        </div>
+    </section>
+    <!-- Cards Section End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/home.js"></script>
+    <script type="module" src="./js/filter.js"></script>
+  </body>
+</html>

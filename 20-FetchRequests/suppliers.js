@@ -1,4 +1,4 @@
-const BASE_URL = "https://northwind.vercel.app/api";
+const BASE_URL = "http://localhost:3000";
 const productHolder = document.querySelector(".product-container")
 
 fetch(`${BASE_URL}/products`)
