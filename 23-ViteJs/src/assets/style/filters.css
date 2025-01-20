@@ -1,0 +1,33 @@
+#filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .search-container, .sort-container {
+    flex: 1;
+    margin: 5px;
+  }
+  
+  .search-container input,
+  .sort-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .search-container, .sort-container {
+      flex: 0 0 48%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #filters-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Film</title>
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/add.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../../../">Add Film</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="add-form-container">
+        <h1>Add Movie</h1>
+        <form id="addMovieForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="fullTitle">Full Title:</label>
+          <input type="text" id="fullTitle" name="fullTitle" required />
+
+          <label for="year">Year:</label>
+          <input type="number" id="year" name="year" required />
+
+          <label for="rating">Rating:</label>
+          <input type="number" step="0.1" id="rating" name="rating" required />
+
+          <label for="image">Image URL:</label>
+          <input type="url" id="image" name="image" required />
+
+          <button type="submit">Add Movie</button>
+        </form>
+      </div>
+    </main>
+    <div class="loader">
+      <p>Loading...</p>
+    </div>
+    <script type="module" src="../scripts/add.js"></script>
+  </body>
+</html>
