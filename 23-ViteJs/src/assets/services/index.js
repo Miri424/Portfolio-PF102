@@ -43,6 +43,15 @@ export async function addMovie(movie) {
     }
 }
 
+export async function getMovieById(endpoint,id) {
+    try {
+        const response = await axios.get(`${BASE_URL}/${endpoint}/${id}`);
+        return response.data
+    } catch (err) {
+        handleError(err)
+    }
+}
+
 export function handleError(err) {
     console.error("An error occured : ", err);
 }
