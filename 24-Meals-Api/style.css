@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d65108;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 520px;
+    margin: 0 auto; 
+}
+
+
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 1rem 1.2rem;
+    font-size: 16px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+  }
+  
+  .search-bar input::placeholder {
+    color: #d65108;
+  }
+  
+  .search-bar button {
+    background-color: #d65108;
+    color: white;
+    border: none;
+    padding-top: 2px;
+    padding: 2px -2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0;
+  }
+  
+  .search-bar button i {
+    font-size: 16px;
+    padding-top: 17.5px;
+    width: 55px;
+    height: 55px;
+    
+}
+  
+  .search-bar button:hover {
+    background-color: #b54506;
+  }
+  
+
+.cardsHolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.card {
+    width: 370px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.imageSide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infoSide {
+    padding: 15px;
+    text-align: center;
+}
+
+.infoSide h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.btnHolder {
+    padding: 15px;
+    text-align: center;
+}
+
+.btnHolder button {
+    background-color: #d65108;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px 32px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out,  0.2s ease-in-out;
+}
+
+.btnHolder button:hover {
+    background-color: #b54406;
+    transform: scale(1.05);
+}
