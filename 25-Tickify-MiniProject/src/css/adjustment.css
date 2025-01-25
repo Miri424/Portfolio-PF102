@@ -1,0 +1,18 @@
+#root{
+    font-family: "Poppins", serif;
+    background-color: #222222;
+
+  button:active {
+    transform: scale(0.93);
+  }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.exploreSec {
+    background: linear-gradient(89.38deg, #022D5F 32%, #1565C0 100%);
+    color: aliceblue;
+}

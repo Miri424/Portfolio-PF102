@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickify</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" type="image/png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWIPER CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../src/css/swiper.css">
+  <link rel="stylesheet" href="../src/css/banner.css">
+  <link rel="stylesheet" href="../src/css/navbar.css">
+  <link rel="stylesheet" href="../src/css/adjustment.css">
+  <link rel="stylesheet" href="../src/css/main.css">
+  <link rel="stylesheet" href="../src/css/reset.css">
+  <link rel="stylesheet" href="../src/css/cards.css">
+  <link rel="stylesheet" href="../src/css/locations.css">
+  <link rel="stylesheet" href="../src/css/comments.css">
+  <link rel="stylesheet" href="../src/css/footer.css">
+  </head>
+    <!-- NAVBAR\begin{itemize} -->
+    <div id="root">
+        <header>
+        <div class="container">
+          <nav>
+            <div class="navHolder">
+                <div class="navLogo">
+                <img class="navLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" alt="">
+                </div>
+            <div class="navLeftSide">
+              <h2>Tickify</h2>
+              <input class="searchInp" type="search" placeholder="Search for events..."/>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="rightSide">
+              <div class="actionsNav">
+                <div class="logInNav">
+                <i class="fa-regular fa-circle-user"></i>
+                  <span><a style="color: #fff;" href="">Log In</a></span>
+                </div>
+                <div class="helpNav">
+                    <i class="fa-solid fa-question"></i>
+                  <span><a href="" style="color: #fff;">Help</a></span>
+                </div>
+                <div class="language">
+                    <i class="fa-solid fa-language"></i>
+                    <span>EN</span>
+                </div>
+                <div class="currency">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  <span>USD</span>
+                </div>
+                <div class="adminButton">
+                  <img src="" alt="" />
+                  <button class="dashboardBtn">Dashboard</button>
+                </div>
+              </div>
+            </div>
+        </div>
+            <div class="navDescription">
+              <span
+                >Gigsberg is a secondary ticket marketplace. All tickets are
+                guaranteed and secure. Prices are set by sellers and may be
+                above or below face value.</span
+              >
+            </div>
+          </nav>
+        </div>
+         </header>
+      <!-- NAVBAR\end{code} -->
+
+      <!-- BANNER\begin{itemize} -->
+        <section>
+      <div class="banner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide slide1">
+              <div class="bannerHolder">
+                <div class="bannerLeftSide">
+                  <div class="nameCnt">
+                    <h2>Lankaran</h2>
+                  </div>
+                  <div class="bannerCnt">
+                    <button class="bannerBtn">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide slide2">
+              <div class="bannerHolder">
+                <div class="bannerLeftSide">
+                  <div class="nameCnt">
+                    <h2>Ganja</h2>
+                  </div>
+                  <div class="bannerCnt">
+                    <button class="bannerBtn">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide slide3">
+              <div class="bannerHolder">
+                <div class="bannerLeftSide">
+                  <div class="nameCnt">
+                    <h2>Baku</h2>
+                  </div>
+                  <div class="bannerCnt">
+                    <button class="bannerBtn">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+      <!-- BANNER\end{code} -->
+
+
+       <!--MAIN\begin{itemize} -->
+       <section class="mainSec">
+       <div class="container">
+        <div class="trendingEventsTop">
+            <div class="trendingEventsTitle">
+                <h2>Trending Events</h2>
+            </div>
+            <div class="optionFolder">
+            <select name="" id="">
+                <option value="def" hidden>Filter By City</option>
+                <option value="baku">Baku</option>
+                <option value="baku">Lankaran</option>
+                <option value="baku">Ganja</option>
+                <option value="baku">Sumgait</option>
+            </select>
+            </div>
+        </div>
+        <div class="cardHolder"></div>
+      </div>
+    </section>
+    <!-- MAIN\end{itemize} -->
+
+
+    <!--EXPLORE\begin{itemize} -->
+        <section class="exploreSec">
+        <div class="container">
+            <div class="locations-container">
+                <h1>Explore Locations</h1>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="image-container">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/204659192.webp?k=a6a3f46b391326ea556946acd39f6e9d5a69726c8fc333b19de61ac17c4566de&o=">
+                        </div>
+                        <h2 class="location-name">Lankaran</h2>
+                    </div>
+                    <div class="location-card">
+                        <div class="image-container">
+                            <img src="https://citytoursbaku.com/wp-content/uploads/2020/05/heydar-aliyev-center-.jpg" alt="Casa Mila building in Barcelona">
+                        </div>
+                        <h2 class="location-name">Baku</h2>
+                    </div>
+                    <div class="location-card">
+                        <div class="image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ilham_Aliyev_attended_the_opening_of_the_Heydar_Aliyev_Park_Complex_and_the_Heydar_Aliyev_Center_in_Ganja_60.jpg/640px-Ilham_Aliyev_attended_the_opening_of_the_Heydar_Aliyev_Park_Complex_and_the_Heydar_Aliyev_Center_in_Ganja_60.jpg" alt="Eiffel Tower in Paris">
+                        </div>
+                        <h2 class="location-name">Ganja</h2>
+                    </div>
+                    <div class="location-card">
+                        <div class="image-container">
+                            <img src="https://abc.az/storage/abc/2022/july/21/sumqayit-BM.jpg" alt="Canal houses in Amsterdam">
+                        </div>
+                        <h2 class="location-name">Sumgait</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- EXPLORE\end{itemize} -->
+
+
+        <!--COMMENTS\begin{itemize} -->
+        <section>
+          <div class="commentHolder">
+            <h1>Comments</h1>
+            <div class="comment">
+              <div class="commentHeader">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFhGjFn2AXiVhwnx39iGp0uE15cb5bs3rKw&s" alt="User Avatar" class="avatar">
+                <div class="userInfo">
+                  <h3>John Doe</h3>
+                  <span class="rating">5/5</span>
+                </div>
+              </div>
+              <p class="commentText">Great place to visit! I enjoyed the winter in Lankaran a lot. I'm suggesting everyone visit this place. I'll be back soon!</p>
+            </div>
+          
+            <div class="comment">
+              <div class="commentHeader">
+                <img src="https://i.pinimg.com/736x/b6/cd/c0/b6cdc046412effb67ef0a461ee0f4531.jpg" alt="User Avatar" class="avatar">
+                <div class="userInfo">
+                  <h3>Anna Smith</h3>
+                  <span class="rating">4/5</span>
+                </div>
+              </div>
+              <p class="commentText">Lovely events and a vibrant atmosphere. A must-visit for anyone who loves exploring unique places!</p>
+            </div>
+          </div>
+          
+        </section>
+        <!-- COMMENTS\end{itemize} -->
+
+      
+        <!--FOOTER\begin{itemize} -->
+        <footer>
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>This site is designed for enthusiasts to explore, watch, and share information about movies and events. Browse through our movie archive, stay updated on the latest events, and add your favorite movies or events to the list.</p>
+          </div>
+          
+          <div class="footer-section social">
+            <h3>To Get In Touch With</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a class="active" href="#">Home page</a></li>
+              <li><a href="#">Hakkında</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="footer-section thanking">
+            <h3>Thanks for visiting us!</h3>
+            <p>Thanks for visiting us! We hope you had a great experience exploring our movies and events.</p>
+<p>If you have any suggestions, feedback, or complaints, feel free to reach out to us. Your opinions matter, and we're always looking to improve our platform to serve you better.</p>
+          </div>
+        </footer>
+        <br>
+        <hr>
+        <p class="credits">&copy; 2025. All rights reserved.</p>
+        <span></span>
+        <p class="credits">Designed by a junior frontend developer</p>
+        <p class="credits">People Who Made This Possible : Miri, ChatGPT</p>
+        <br>
+      </div>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/scripts/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../src/scripts/main.js"></script>
+</body>
+</html>

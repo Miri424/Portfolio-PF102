@@ -1,0 +1,80 @@
+.commentHolder {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.362);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* border: white 1px solid; */
+  }
+  
+  /* Yorum Başlığı */
+  .commentHolder h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Yorum Stilini Genel Olarak Tasarla */
+  .comment {
+    background: black;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  
+  /* Yorum Hover Efekti */
+  .comment:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Yorum Başlık (Avatar + Kullanıcı Adı) */
+  .commentHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .userInfo h3 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+  }
+  
+  .userInfo .rating {
+    font-size: 14px;
+    color: #f39c12;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  /* Yorum Metni */
+  .commentText {
+    font-size: 14px;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Yorumlar Arasındaki Boşluk */
+  .comment:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  

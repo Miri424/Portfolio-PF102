@@ -1,0 +1,363 @@
+
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Tech Conference 2024",
+      "dateTime": "2024-12-15T09:00:00Z",
+      "venueName": "Tech Park Conference Hall",
+      "venueAddress": "123 Silicon Avenue, Baku, Azerbaijan",
+      "venueCapacity": 500,
+      "organizer": "Tech Innovators",
+      "description": "An annual conference for tech enthusiasts to explore the latest trends in AI, IoT, and software development.",
+      "ticketsAvailable": 200,
+      "category": "Technology",
+      "price": 100,
+      "ageRestriction": "18+",
+      "posterURL": "https://blog.inevent.com/wp-content/uploads/2024/05/top_20_tech_conferences_to_attend_in_2024.webp",
+      "duration": "8 hours",
+      "soldTickets": 300
+    },
+    {
+      "id": "2",
+      "name": "Live Music Night",
+      "dateTime": "2024-12-20T19:30:00Z",
+      "venueName": "City Music Arena",
+      "venueAddress": "456 Harmony Street, Ganja, Azerbaijan",
+      "venueCapacity": 1000,
+      "organizer": "Music Fest Co.",
+      "description": "A night to enjoy live performances from renowned artists and local bands.",
+      "ticketsAvailable": 50,
+      "category": "Music",
+      "price": 50,
+      "ageRestriction": "16+",
+      "posterURL": "https://www.icmp.ac.uk/sites/default/files/new/how_to_promote_live_events_blog_2022_1.jpg",
+      "duration": "4 hours",
+      "soldTickets": 600
+    },
+    {
+      "id": "3",
+      "name": "Startup Pitch Day 2024",
+      "dateTime": "2024-11-30T10:00:00Z",
+      "venueName": "Startup Hub Auditorium",
+      "venueAddress": "789 Innovation Drive, Baku, Azerbaijan",
+      "venueCapacity": 300,
+      "organizer": "Startup Incubator",
+      "description": "Pitch your ideas to investors and gain mentorship from industry leaders.",
+      "ticketsAvailable": 150,
+      "category": "Business",
+      "price": 30,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://www.growthmentor.com/wp-content/uploads/2022/11/startup-pitch-competition.jpg",
+      "duration": "6 hours",
+      "soldTickets": 100
+    },
+    {
+      "id": "4",
+      "name": "Art Exhibition 2024",
+      "dateTime": "2024-12-01T15:00:00Z",
+      "venueName": "Modern Art Gallery",
+      "venueAddress": "321 Creative Lane, Baku, Azerbaijan",
+      "venueCapacity": 200,
+      "organizer": "Artistic Minds",
+      "description": "Explore the finest contemporary art from local and international artists.",
+      "ticketsAvailable": 80,
+      "category": "Art",
+      "price": 20,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://artbusinessnews.com/wp-content/uploads/2021/08/pexels-julio-nery-1839919-scaled.jpg",
+      "duration": "5 hours",
+      "soldTickets": 70
+    },
+    {
+      "id": "5",
+      "name": "Yoga and Wellness Retreat",
+      "dateTime": "2024-12-10T07:00:00Z",
+      "venueName": "Wellness Center",
+      "venueAddress": "123 Tranquility Road, Lankaran, Azerbaijan",
+      "venueCapacity": 150,
+      "organizer": "Healthy Living",
+      "description": "A refreshing day focused on yoga, meditation, and holistic wellness practices.",
+      "ticketsAvailable": 100,
+      "category": "Health",
+      "price": 70,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://www.alivewellness.info/wp-content/uploads/2021/06/YogaPhuket-1600x1060-1-1024x678.jpg",
+      "duration": "6 hours",
+      "soldTickets": 50
+    },
+    {
+      "id": "6",
+      "name": "Winter Carnival 2024",
+      "dateTime": "2024-12-25T10:00:00Z",
+      "venueName": "Snowland Resort",
+      "venueAddress": "88 Frostbite Lane, Lankaran, Azerbaijan",
+      "venueCapacity": 2000,
+      "organizer": "Holiday Events Co.",
+      "description": "Celebrate the holiday season with festive games, food, and activities for all ages.",
+      "ticketsAvailable": 800,
+      "category": "Festival",
+      "price": 10,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/288459821.jpg?k=b587518e4cb523f3e7fdcc3431338d2cc0ebfdac5f3d1bb0d146e07b8cc44f46&o=&hp=1",
+      "duration": "8 hours",
+      "soldTickets": 1200
+    },
+    {
+      "id": "7",
+      "name": "Chess Championship Finals",
+      "dateTime": "2024-12-18T14:00:00Z",
+      "venueName": "Chess Center Hall",
+      "venueAddress": "54 Strategy Avenue, Baku, Azerbaijan",
+      "venueCapacity": 500,
+      "organizer": "National Chess Association",
+      "description": "Watch the final matches of the national chess championship live!",
+      "ticketsAvailable": 200,
+      "category": "Sports",
+      "price": 25,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://images.chesscomfiles.com/uploads/v1/article/31257.73d039c6.668x375o.8203abb4ab98@2x.png",
+      "duration": "3 hours",
+      "soldTickets": 300
+    },
+    {
+      "id": "8",
+      "name": "Cooking Masterclass with Chef Ali",
+      "dateTime": "2024-12-22T11:00:00Z",
+      "venueName": "Culinary Arts Kitchen",
+      "venueAddress": "12 Gourmet Street, Baku, Azerbaijan",
+      "venueCapacity": 50,
+      "organizer": "Culinary Academy",
+      "description": "Learn the secrets of fine dining with renowned Chef Ali in this hands-on cooking masterclass.",
+      "ticketsAvailable": 20,
+      "category": "Cooking",
+      "price": 100,
+      "ageRestriction": "18+",
+      "posterURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYFrxyJurQRyRqZjzsmNfbENXYRK6v0w6cQ&s",
+      "duration": "4 hours",
+      "soldTickets": 30
+    },
+    {
+      "id": "9",
+      "name": "Photography Workshop",
+      "dateTime": "2024-12-28T09:30:00Z",
+      "venueName": "Creative Studio",
+      "venueAddress": "77 Lens Street, Baku, Azerbaijan",
+      "venueCapacity": 100,
+      "organizer": "Photo Enthusiasts Club",
+      "description": "A hands-on workshop to improve your photography skills with expert tips and live practice sessions.",
+      "ticketsAvailable": 40,
+      "category": "Workshop",
+      "price": 50,
+      "ageRestriction": "16+",
+      "posterURL": "https://moment-workshops.com/public_content/workshops/4ed7c7165e0fbb6079010cf795c9b43f.jpg",
+      "duration": "6 hours",
+      "soldTickets": 60
+    },
+    {
+      "id": "10",
+      "name": "Movie Premiere: The Lost World",
+      "dateTime": "2024-12-29T18:00:00Z",
+      "venueName": "Grand Cinema Hall",
+      "venueAddress": "90 Cinema Boulevard, Lankaran, Azerbaijan",
+      "venueCapacity": 300,
+      "organizer": "CineWorld Productions",
+      "description": "Be the first to watch the highly anticipated action-packed movie 'The Lost World'.",
+      "ticketsAvailable": 100,
+      "category": "Entertainment",
+      "price": 20,
+      "ageRestriction": "13+",
+      "posterURL": "https://m.media-amazon.com/images/M/MV5BMzVlZGQyYTctNzRlNS00MTRmLTllMjQtZmQxMWM3MGFhMDZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "duration": "2.5 hours",
+      "soldTickets": 200
+    },
+    {
+      "id": "11",
+      "name": "Robotics Expo 2024",
+      "dateTime": "2024-12-30T10:00:00Z",
+      "venueName": "Innovation Center",
+      "venueAddress": "50 Tech Avenue, Baku, Azerbaijan",
+      "venueCapacity": 800,
+      "organizer": "Future Tech Foundation",
+      "description": "Explore cutting-edge robotics technology and innovations at this exciting expo.",
+      "ticketsAvailable": 400,
+      "category": "Technology",
+      "price": 15,
+      "ageRestriction": "All Ages",
+      "posterURL": "https://ar-expo.gr/wp-content/uploads/2023/03/ar-expo-gr-robot.png",
+      "duration": "7 hours",
+      "soldTickets": 400
+    },
+    {
+      "id": "12",
+      "name": "New Year's Eve Gala",
+      "dateTime": "2024-12-31T21:00:00Z",
+      "venueName": "Royal Banquet Hall",
+      "venueAddress": "11 Celebration Road, Lankaran, Azerbaijan",
+      "venueCapacity": 500,
+      "organizer": "Elite Events",
+      "description": "Ring in the new year with an evening of fine dining, live music, and fireworks.",
+      "ticketsAvailable": 150,
+      "category": "Celebration",
+      "price": 120,
+      "ageRestriction": "18+",
+      "posterURL": "https://fatsoma.imgix.net/W1siZiIsInB1YmxpYy8yMDI0LzEyLzMvMTkvMTMvNDEvNjc2L0lNR18yNjU2LkpQRyJdXQ?w=768&h=432&fit=fillmax&fill=blur&auto=format%2Ccompress",
+      "duration": "5 hours",
+      "soldTickets": 350
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "username": "admin_tech",
+      "email": "admin_tech@example.com",
+      "password": "hashed_password_1",
+      "balance": 500,
+      "profilePictureURL": "https://example.com/images/admin-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 1
+        },
+        {
+          "id": 2,
+          "eventId": 2
+        }
+      ],
+      "accountCreationDate": "2022-01-01",
+      "totalSpentMoney": 0
+    },
+    {
+      "id": 2,
+      "role": "client",
+      "username": "johnny_events",
+      "email": "johnny@example.com",
+      "password": "hashed_password_2",
+      "balance": 150,
+      "profilePictureURL": "https://example.com/images/johnny-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 3
+        },
+        {
+          "id": 2,
+          "eventId": 4
+        }
+      ],
+      "accountCreationDate": "2023-05-15",
+      "totalSpentMoney": 80
+    },
+    {
+      "id": 3,
+      "role": "client",
+      "username": "mike_attendee",
+      "email": "mike@example.com",
+      "password": "hashed_password_3",
+      "balance": 75,
+      "profilePictureURL": "https://example.com/images/mike-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 1
+        },
+        {
+          "id": 2,
+          "eventId": 2
+        }
+      ],
+      "accountCreationDate": "2023-07-12",
+      "totalSpentMoney": 50
+    },
+    {
+      "id": 4,
+      "role": "client",
+      "username": "jenny_tech",
+      "email": "jenny@example.com",
+      "password": "hashed_password_4",
+      "balance": 120,
+      "profilePictureURL": "https://example.com/images/jenny-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 3
+        },
+        {
+          "id": 2,
+          "eventId": 5
+        }
+      ],
+      "accountCreationDate": "2022-03-01",
+      "totalSpentMoney": 110
+    },
+    {
+      "id": 5,
+      "role": "client",
+      "username": "susan_smith",
+      "email": "susan@example.com",
+      "password": "hashed_password_5",
+      "balance": 200,
+      "profilePictureURL": "https://example.com/images/susan-profile.jpg",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 4
+        },
+        {
+          "id": 2,
+          "eventId": 5
+        }
+      ],
+      "accountCreationDate": "2021-09-20",
+      "totalSpentMoney": 250
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "userId": 2,
+      "eventId": 1,
+      "quantity": 2,
+      "price": 100,
+      "purchaseDate": "2024-11-10T15:30:00Z",
+      "ticketCode": "TK-001-AB12X"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "eventId": 2,
+      "quantity": 1,
+      "price": 80,
+      "purchaseDate": "2024-11-12T10:00:00Z",
+      "ticketCode": "TK-002-CD34Y"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "eventId": 3,
+      "quantity": 3,
+      "price": 120,
+      "purchaseDate": "2024-11-14T12:00:00Z",
+      "ticketCode": "TK-003-EF56Z"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "eventId": 4,
+      "quantity": 1,
+      "price": 90,
+      "purchaseDate": "2024-11-15T18:30:00Z",
+      "ticketCode": "TK-004-GH78A"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "eventId": 5,
+      "quantity": 2,
+      "price": 130,
+      "purchaseDate": "2024-11-16T09:00:00Z",
+      "ticketCode": "TK-005-IJ90B"
+    }
+  ]
+}
