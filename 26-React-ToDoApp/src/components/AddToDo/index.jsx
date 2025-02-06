@@ -4,6 +4,7 @@ import RenderList from "../RenderList"
 import DeleteAll from "../DeleteAll"
 
 const AddToDo = () => {
+
   const [inputValue, setInputValue] = useState("")
   const [todos, setTodos] = useState([])
 
@@ -33,6 +34,7 @@ const AddToDo = () => {
     <div className="container">
       <h1>Best To Do App in PF102</h1>
         <DeleteAll setTodos={setTodos}/>
+        
         <br /><br />
       <form className="todo-form">
         <input 
