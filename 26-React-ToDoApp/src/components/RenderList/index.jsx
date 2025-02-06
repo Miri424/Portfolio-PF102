@@ -1,4 +1,4 @@
-import ListElements from "../../ListElements"
+import ListElements from "../ListElements"
 
 const RenderList = ({ todos, setTodos }) => {
     return (
