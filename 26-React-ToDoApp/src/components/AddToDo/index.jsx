@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { nanoid } from 'nanoid'
 import RenderList from "../RenderList"
+import DeleteAll from "../DeleteAll"
 
 const AddToDo = () => {
   const [inputValue, setInputValue] = useState("")
@@ -27,21 +28,17 @@ const AddToDo = () => {
         setInputValue("")
     }
 
-    const deleteAll = () => {
-        setTodos([]);
-    }
 
   return (
     <div className="container">
       <h1>Best To Do App in PF102</h1>
-        <button onClick={deleteAll}>
-          Delete All
-        </button>
+        <DeleteAll setTodos={setTodos}/>
         <br /><br />
       <form className="todo-form">
         <input 
         onChange={handleChange} 
-        type="text" 
+        type="text"
+        value={inputValue}
         className="todo-input" 
         placeholder="Add a new task..." 
         required 

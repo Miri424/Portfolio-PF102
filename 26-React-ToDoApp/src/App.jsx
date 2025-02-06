@@ -4,7 +4,6 @@ import "./style/index.css"
 function App() {
   return (
     <>
-    
       <AddToDo /> 
     </>
   )
