@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickify-Profile</title>
+    <!-- Logo Link -->
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s"
+      type="image/png"
+    />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../src/css/global/reset.css" />
+    <link rel="stylesheet" href="../src/css/global/adjustment.css" />
+    <link rel="stylesheet" href="../src/css/pages/clientProfile.css" />
+    <link rel="stylesheet" href="../src/css/layouts/settings.css" />
+  </head>
+  <body>
+    <body>
+      <!-- Navbar -->
+      <header id="myProfile">
+        <div class="navHolder">
+          <div class="navLogoHolder">
+            <img
+              style="border-radius: 25%"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s"
+              alt="Tickify Logo"
+            />
+            <h2>Tickify</h2>
+          </div>
+          <div class="nav-links">
+            <a
+              style="cursor: pointer"
+              onclick="window.location.href = 'home.html' "
+              >Home</a
+            >
+            <a>Events</a>
+            <a>My Profile</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+          <h3>Account Settings</h3>
+          <ul>
+            <li><a href="#myProfile">My Profile</a></li>
+            <li><a href="#myTickets">My Tickets</a></li>
+            <li><a href="#settingsSection">Settings</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="content">
+          <div class="profile-card">
+            <div class="profile-header">
+              <img src="" alt="Profile Photo" id="profileImage" />
+              <div
+                class="Ne ad qoyum hec ozumde bilmedim bom-bosh saxladim onsuz ele style zadda vermirem"
+              >
+                <h1 id="userName"></h1>
+                <p id="userEmail"></p>
+              </div>
+            </div>
+            <div class="info-section">
+              <h2>Account Details</h2>
+              <div class="field">
+                <label for="username">Username</label>
+                <input type="text" id="username" value="" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="" />
+              </div>
+              <div class="field">
+                <label for="ticketCount">Profile Image Url</label>
+                <input type="text" id="image" value="" />
+              </div>
+              <button class="update-btn" id="updateProfileBtn">
+                Update Information
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-card password-section">
+            <h2>Change Password</h2>
+            <div class="field">
+              <label for="currentPassword">Current Password</label>
+              <input
+                type="password"
+                id="currentPassword"
+                placeholder="Enter your current password"
+              />
+            </div>
+            <div class="field">
+              <label for="newPassword">New Password</label>
+              <input
+                type="password"
+                id="newPassword"
+                placeholder="Enter your new password"
+              />
+            </div>
+            <div class="field">
+              <label for="confirmPassword">Confirm New Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Re-enter your new password"
+              />
+            </div>
+            <button class="update-btn" id="changePasswordBtn">
+              Change Password
+            </button>
+          </div>
+
+          <!-- My Tickets Section -->
+          <section id="myTickets">
+            <div class="profile-card tickets-section">
+              <h2>My Tickets</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Event ID</th>
+                    <th~>Event Name</th~>
+                    <th>Ticket ID</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody id="ticketsTableBody"></tbody>
+              </table>
+            </div>
+          </section>
+          <section id="settingsSection">
+            <div class="sorrying">
+              <p>I just put a placeholder here for now.</p>
+              <p>In the meantime, here's a joke to keep you entertained:</p>
+              <p>Why dont developers tell secrets in a forest? Because the trees have too many *logs*!</p>
+              <p>No laughs? Alright, I'll go refactor my humor!</p>
+              <div>
+                <button id="change-joke-btn">
+                  Click here to laugh. Or not.
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="../src/scripts/common/joke.js"></script>
+      <script src="../src/scripts/common/sidebar.js"></script>
+      <script
+        type="module"
+        src="../src/scripts/pages/clientProfile.js"
+      ></script>
+    </body>
+</html>

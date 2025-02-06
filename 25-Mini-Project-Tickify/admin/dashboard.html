@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickify-Dashoard</title>
+    <!-- Logo Link -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" type="image/png"/>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../src/css/pages/dashboard.css">
+    <link rel="stylesheet" href="../src/css/global/adjustment.css">
+
+    <!-- Font awesome -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Tickify</h1>
+            </div>
+            <nav>
+                <div class="nav-item active">Dashboard</div>
+                <div class="nav-item">Events Management</div>
+                <div class="nav-item">Add Event</div>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" alt="">
+                <input type="text" placeholder="Search projects" class="search-bar">
+                <div style="display: flex;" class="user-profile">
+                    <p style="margin: 15px;">Admin Name</p>
+                    <img style="width: 50px; height: 50px; border-radius: 50%;" src="https://preview.redd.it/making-your-ocs-into-a-dumbass-cat-pfp-example-picture-v0-cw03jlwek4rc1.png?width=640&crop=smart&auto=webp&s=baa39b112113a05bcda527e362a8baebaf952791" alt="">
+                </div>
+            </header>
+            <div class="endpoints" style="margin: 12px; color: #ffffff;">
+                <h2>Endpoint Metrics</h2>
+                <p class="events">events :</p>
+                <p class="tickets">tickets :</p>
+                <p class="users">users :</p>
+            </div>
+
+            <div class="metrics-container">
+                <div class="metric-card sales-card">
+                    <h3>Weekly Sales</h3>
+                    <div class="value sales">$120</div>
+                    <div class="change">N/A</div>
+                </div>
+                <div class="metric-card orders-card">
+                    <h3>Weekly Orders</h3>
+                    <div class="value">45,6334</div>
+                    <div class="change">Decreased by 10%</div>
+                </div>
+                <div class="metric-card visitors-card">
+                    <h3>Visitors Online</h3>
+                    <div class="value online-people">95</div>
+                    <div class="change">Increased by 20%</div>
+                </div>
+            </div>
+            <div class="charts-container">
+                <div class="chart-card large">
+                    <div class="chart-header">
+                        <h2 class="chart-title">User Reports Map</h2>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #0f0222;"></span>
+                                CHN
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #ff6b6b;"></span>
+                                USA
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot" style="background: #4dabf7;"></span>
+                                UK
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="height: 330px; background: #f8f9fa; border-radius: 8px;">
+                        <!-- <div class="img-skeleton"></div> -->
+                        <img style="height: 330px; width: 100%; border-radius: 8px;" src="https://raw.githubusercontent.com/grafana/worldmap-panel/54f83cfdc7339fee02df00933422c35630677330/src/images/worldmap-world.png" alt="">
+                    </div>
+                </div>
+                <div class="chart-card small">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Traffic Sources</h2>
+                    </div>
+                    <div style="height: 330px; max-width: 390px; background: #f8f9fa; border-radius: 8px;">
+                        <div class="img-skeleton"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../src/scripts/common/calculateAdmin.js"></script>
+</body>
+</html>
+

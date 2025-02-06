@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- logo link -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" type="image/png">
+    <!-- Css links -->
+    <link rel="stylesheet" href="../src/css/global/reset.css">
+    <link rel="stylesheet" href="../src/css/global/adjustment.css">
+    <link rel="stylesheet" href="../src/css/pages/details.css">
+    <link rel="stylesheet" href="../src/css/layouts/footer.css
+    ">
+    <link rel="stylesheet" href="../src/css/components/cards.css">
+    <!-- Font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="backBtnContainer">
+                <button class="backBtn" onclick="history.back()">Back</button>
+            </div>    
+            <div class="detailsHolder">
+                <div class="leftHolder">
+                    <div class="imgHolder">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="rightHolder">
+                <div class="nameHolder details"> 
+                    <h2></h2>
+                </div>
+                <div class="descHolder details">
+                    <p></p>
+                </div>
+                <div class="venueAdress details">
+                    <span class="staticText">Venue Adress:</span>
+                    <span></span>
+                </div>
+                <div class="availableTickets">
+                    <span class="staticText">Available Tickets:</span>
+                    <span class="availableTicketsText">421</span>
+                </div>
+                <div class="price details">
+                    <span class="staticText">Price:</span>
+                    <span></span>
+                </div>
+                <div>
+                    <div class="input details">
+                        <input type="number" id="quantity" name="quantity" value="1">
+                    </div>
+                    <div class="actions details">
+                        <button class="buyBtn">Get your seat</button>
+                    </div>
+                    <div style="margin-top: 12px; margin-left: 192px;">
+                        <span class="staticText">Sold Tickets:</span>
+                        <span class="soldTickets"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- SUGGESTIONS START-->
+            <section class="mainSec">
+                <div class="container">
+                 <div style="margin-top: 90px;" class="trendingEventsTop">
+                     <div class="trendingEventsTitle">
+                         <h2>You May Also Like :</h2>
+                     </div>
+                 </div>
+                 <div class="cardHolder">
+
+                 </div>
+               </div>
+             </section>
+    </div>
+
+            <!-- SUGGESTIONS END -->
+        <footer style="margin-top: 110px;">
+            <div class="footer-section about">
+              <h3>About Us</h3>
+              <p>This site is designed for enthusiasts to explore, watch, and share information about movies and events. Browse through our movie archive, stay updated on the latest events, and add your favorite movies or events to the list.</p>
+            </div>
+            
+            <div class="footer-section social">
+              <h3>To Get In Touch With</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a class="activeA" href="../pages/home.html">Home page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-section thanking">
+              <h3>Thanks for visiting us!</h3>
+              <p>Thanks for visiting us! We hope you had a great experience exploring our movies and events.</p>
+              <p>If you have any suggestions, feedback, or complaints, feel free to reach out to us. Your opinions matter, and we're always looking to improve our platform to serve you better.</p>
+            </div>
+          </footer>
+          <br>
+          <hr>
+          <p class="credits">&copy; 2025. All rights reserved.</p>
+          <p class="credits">Designed by a junior frontend developer</p>
+          <p class="credits">Person Who Made This Possible : Miri</p>
+          <br>
+        </div>  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../src/scripts/pages/details.js"></script>
+    <script type="module" src="../src/scripts/common/cards.js"></script>
+</body>
+</html>

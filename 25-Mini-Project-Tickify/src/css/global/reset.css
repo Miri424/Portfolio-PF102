@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.bannerHolder {
+  max-width: 1290px;
+  width: 100%;
+}
+
+.exploreSec {
+  background: linear-gradient(89.38deg, #022d5f 32%, #1565c0 100%);
+  color: aliceblue;
+}

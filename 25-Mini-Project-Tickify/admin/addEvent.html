@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" type="image/png"/>
+    <link rel="stylesheet" href="../src/css/pages/dashboard.css">
+    <link rel="stylesheet" href="../src/css/pages/addEvent.css">
+    <link rel="stylesheet" href="../src/css/global/adjustment.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Tickify</h1>
+            </div>
+            <nav>
+                <div class="nav-item">Dashboard</div>
+                <div class="nav-item">Events Management</div>
+                <div class="nav-item active">Add Event</div>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" alt="">
+                <input type="text" placeholder="Search projects" class="search-bar">
+                <div style="display: flex;" class="user-profile">
+                    <p style="margin: 15px;">Admin Name</p>
+                    <img style="width: 50px; height: 50px; border-radius: 50%;" src="https://preview.redd.it/making-your-ocs-into-a-dumbass-cat-pfp-example-picture-v0-cw03jlwek4rc1.png?width=640&crop=smart&auto=webp&s=baa39b112113a05bcda527e362a8baebaf952791" alt="">
+                </div>
+            </header>
+            <div class="add-event-container">
+                <h2>Add New Event</h2>
+                <form id="addEventForm">
+                    <div class="form-group">
+                        <label for="eventName">Event Name</label>
+                        <input type="text" id="eventName" placeholder="Enter event name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Date & Time</label>
+                        <input type="datetime-local" id="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventLocation">Location</label>
+                        <input type="text" id="eventLocation" placeholder="Enter location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventVenueAddress">Venue Address</label>
+                        <input type="text" id="eventVenueAddress" placeholder="Enter Venue Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="venueCapacity">Venue Capacity</label>
+                        <input type="number" id="venueCapacity" placeholder="Enter capacity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventOrganizer">Organizer</label>
+                        <input type="text" id="eventOrganizer" placeholder="Enter organizer name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Description</label>
+                        <textarea id="eventDescription" placeholder="Enter event description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventTickets">Tickets Available</label>
+                        <input type="number" id="eventTickets" placeholder="Enter available tickets" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventCategory">Category</label>
+                        <select id="eventCategory" required>
+                            <option value="" disabled selected>Select category</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Music">Music</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Theater">Theater</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventPrice">Ticket Price ($)</label>
+                        <input type="number" id="eventPrice" placeholder="Enter ticket price" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ageRestriction">Age Restriction</label>
+                        <input type="text" id="ageRestriction" placeholder="e.g. 18+, All Ages" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="posterURL">Event Poster URL</label>
+                        <input type="url" id="posterURL" placeholder="Enter image URL" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDuration">Event Duration</label>
+                        <input type="text" id="eventDuration" placeholder="2 hours & Full day" required>
+                    </div>
+                    <button type="submit" class="add-event-btn">Add Event</button>
+                </form>
+            </div>
+            
+       </main>
+    </div>     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../src/scripts/common/postAdmin.js"></script>
+</body>
+</html>

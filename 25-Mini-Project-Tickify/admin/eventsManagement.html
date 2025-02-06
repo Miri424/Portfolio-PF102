@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <!-- Logo Link -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" type="image/png"/>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../src/css/pages/dashboard.css">
+    <link rel="stylesheet" href="../src/css/pages/eventsManagement.css">
+     <!-- Font awesome -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <aside class="sidebar">
+                <div class="logo">
+                    <h1>Tickify</h1>
+                </div>
+                <nav>
+                    <div> <a class="nav-item" href="./dashboard.html">Dashboard</a></div>
+                    <div> <a class="nav-item active" href="">Events Management</a></div>
+                    <div> <a class="nav-item" href="">Add Event</a></div>
+                </nav>
+            </aside>
+            <div class="main-content">
+                <header class="header">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyERX7Y94APlH2z5gPVlUIj5n-9Tq0uXevw&s" alt="">
+                    <input type="text" placeholder="Search projects" class="search-bar">
+                    <div style="display: flex;" class="user-profile">
+                        <p style="margin: 15px;">Admin Name</p>
+                        <img style="width: 50px; height: 50px; border-radius: 50%;" src="https://preview.redd.it/making-your-ocs-into-a-dumbass-cat-pfp-example-picture-v0-cw03jlwek4rc1.png?width=640&crop=smart&auto=webp&s=baa39b112113a05bcda527e362a8baebaf952791" alt="">
+                    </div>
+                </header>
+                   <h2>Event Management</h2>
+        <table class="event-table">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="eventTableBody">
+                
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../src/scripts/common/Management.js"></script>
+</body>
+</html>

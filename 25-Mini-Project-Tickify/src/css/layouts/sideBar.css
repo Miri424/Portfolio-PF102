@@ -1,0 +1,80 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Varsayılan kapalı pozisyon */
+    width: 250px;
+    height: 100%;
+    background: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Açık pozisyon */
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #34495e;
+    border-bottom: 1px solid #7f8c8d;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px 20px;
+  }
+  
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-menu li a:hover {
+    color: #1abc9c;
+  }
+  
+  /* Butonlar */
+  .open-btn, .close-btn {
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .open-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    display: none; /* Varsayılan olarak gizli, mobilde görünür olacak */
+  }
+  
+  .close-btn {
+    font-size: 24px;
+    line-height: 1;
+  }
+  
+  /* Responsive tasarım */
+  @media (max-width: 768px) {
+    .open-btn {
+      display: block;
+    }
+  }
