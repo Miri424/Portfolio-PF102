@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 213,
+      "name": "Product 1",
+      "price": 10.99,
+      "isDiscounted": false
+    },
+    {
+      "id": 2231,
+      "name": "Product 2",
+      "price": 15.99,
+      "isDiscounted": true
+    },
+    {
+      "id": 321,
+      "name": "Product 3",
+      "price": 7.99,
+      "isDiscounted": false
+    },
+    {
+      "name": "sA21",
+      "price": 213,
+      "isDiscounted": false,
+      "id": 2232
+    },
+    {
+      "id": "Wua259LhRvKQ5_S3RsGjm",
+      "name": "sd21",
+      "price": 213,
+      "isDiscounted": false
+    }
+  ]
+}
