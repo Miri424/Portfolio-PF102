@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://picsum.photos/200/300",
+      "name": "Gaming Laptop",
+      "price": "$1200",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam, distinctio ullam soluta sed qui maxime magnam architecto? At modi quo, aliquid molestiae nisi laudantium, unde consectetur assumenda laborum non, deserunt eveniet?",
+      "isDiscounted": false
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/200/300",
+      "name": "Wireless Headphones",
+      "price": "$150",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam, distinctio ullam soluta sed qui maxime magnam architecto? At modi quo, aliquid molestiae nisi laudantium, unde consectetur assumenda laborum non, deserunt eveniet?",
+      "isDiscounted": true
+    },
+    {
+      "id": 3,
+      "image": "https://picsum.photos/200/300",
+      "name": "Smartphone",
+      "price": "$900",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam, distinctio ullam soluta sed qui maxime magnam architecto? At modi quo, aliquid molestiae nisi laudantium, unde consectetur assumenda laborum non, deserunt eveniet?",
+      "isDiscounted": false
+    },
+    {
+      "id": "VEwi",
+      "name": "Eden Byrd",
+      "price": "$510",
+      "description": "Officiis nisi commod",
+      "image": "Qui atque eligendi i"
+    },
+    {
+      "id": "XC4R",
+      "name": "Kibo Atkinson",
+      "price": "$828",
+      "description": "Doloremque temporibu",
+      "image": "Sed enim ratione dol"
+    }
+  ]
+}

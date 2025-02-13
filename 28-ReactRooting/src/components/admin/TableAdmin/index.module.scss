@@ -1,0 +1,54 @@
+.tableHolder {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.adminTable {
+  width: 100%;
+}
+
+.tableHeader {
+  height: 50px;
+  font-size: 18px;
+  // background: rgb(92, 92, 92);
+  background: linear-gradient(135deg, #1e1e1e, #1e1e1a);
+  color: white;
+  padding-left: 15px;
+  //   margin-top: 23px;
+}
+
+.tr {
+  height: 40px;
+  //   max-height: 67px;
+  background-color: darkred;
+  transition: all 0.3s ease-in-out;
+}
+
+.td {
+  font-size: 16px;
+  color: black;
+  padding-left: 15px;
+}
+
+.tr:hover {
+  background: rgba(255, 0, 0, 0.679);
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-btn {
+  width: 80px;
+  height: 30px;
+  background: rgb(92, 92, 92);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  transform: translateY(-5%);
+  transition: 300ms ease-in-out;
+  background: darkred;
+}
