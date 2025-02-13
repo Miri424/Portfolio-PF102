@@ -19,15 +19,6 @@ export const getProducts = async () => {
     }
   };
   
-  export const updateProduct = async (id, updatedProduct) => {
-    try {
-      const response = await axios.put(`${BASE_URL}/${id}`, updatedProduct);
-      return response.data;
-    } catch (error) {
-        handleError(error)
-    }
-  };
-  
   export const deleteProduct = async (id) => {
     try {
       await axios.delete(`${BASE_URL}/products/${id}`);

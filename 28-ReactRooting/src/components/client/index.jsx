@@ -1,6 +1,6 @@
-import Footer from "./footer"
 import HeaderClient from "./Header"
 import { Outlet } from "react-router"
+import Footer from "./footer"
 
 const ClientLayout = () => {
   return (
