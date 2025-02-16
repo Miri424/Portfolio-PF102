@@ -12,7 +12,7 @@ const HeaderClient = () => {
             <div className="navRightHolder">
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"/products"}>Products</NavLink>
-              <NavLink to={"/contact"}>Contact</NavLink>
+              <NavLink to={"/favorites"}>Favorites</NavLink>
               <button>
                 <NavLink to={"/admin"}>Admin</NavLink>
               </button>

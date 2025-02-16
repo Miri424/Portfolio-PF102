@@ -1,7 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
+// import { FaRegHeart, FaHeart } from "react-icons/fa";
+
 import styles from "./index.module.scss";
+import FavoriteIcons from "../FavoriteIcons";
 
 const ProductItem = ({ products }) => {
+  console.log(products);
+
   return (
     <div className={styles["product-container"]}>
       {products.map((product) => (
@@ -21,13 +26,15 @@ const ProductItem = ({ products }) => {
           <h2>{product.name}</h2>
           <p className={styles.price}>{product.price}</p>
           <p className={styles.description}>
-            {product.description.length > 80
-              ? product.description.slice(0, 80) + "..."
-              : product.description}
+            {product.description.slice(0, 37) + "..."}
           </p>
           <button>
             <Link to={`/products/${product.id}`}>Go To Details</Link>
           </button>
+          <div className={styles.iconHolder}>
+            <FavoriteIcons  product={product}/>
+          </div>
+          
         </div>
       ))}
     </div>

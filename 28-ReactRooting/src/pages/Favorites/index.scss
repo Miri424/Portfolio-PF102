@@ -1,0 +1,65 @@
+.favHolder {
+    padding: 20px;
+    color: white;
+    background: black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+  }
+  
+  .favTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .clearAllBtn {
+    background: crimson;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: darkred;
+    }
+  }
+  
+  .favList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .favItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .favLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .favIcon {
+    color: red;
+  }
+  
+  .favRemoveBtn {
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: red;
+      color: white;
+    }
+  }
+  
