@@ -1,0 +1,1 @@
+// Formik ve yup u vermeseniz bunu custom yazacaqdim :)) 

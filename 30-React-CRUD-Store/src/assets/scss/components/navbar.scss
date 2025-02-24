@@ -1,0 +1,82 @@
+.nav-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left-holder h1 {
+  font-size: 24px;
+}
+
+.nav-right-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right-holder ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right-holder ul li {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.actions-holder {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-holder {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.sign-in-btn {
+  border-radius: 12px;
+  padding: 6px 20px;
+  max-height: 45px;
+  height: 100%;
+  color: white;
+  background: #2577FD;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
