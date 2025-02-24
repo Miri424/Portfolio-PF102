@@ -5,7 +5,6 @@ import Input from "../UI/Input";
 import "../../assets/scss/main.scss";
 
 const Navbar = () => {
-
   return (
     <header>
       <nav>
@@ -16,12 +15,21 @@ const Navbar = () => {
             </div>
             <div className="nav-right-holder">
               <ul>
-                <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/Category"}>About</Link></li>
-                <li><Link to={"/Latest"}>Latest</Link></li>
-                <li><Link to={"/Blog"}>Blog</Link></li>
-                <li><Link to={"/Pages"}>Pages</Link></li>
-                <li><Link to={"/contact"}>Contact</Link></li>
+                <li>
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li>
+                  <Link to={"/Category"}>About</Link>
+                </li>
+                <li>
+                  <Link to={"/Latest"}>Latest</Link>
+                </li>
+                <li>
+                  <Link to={"/Blog"}>Blog</Link>
+                </li>
+                <li>
+                  <Link to={"/admin/product-table"}>Admin Table</Link>
+                </li>
               </ul>
               <div className="actions-holder">
                 <Input />
@@ -31,7 +39,9 @@ const Navbar = () => {
                 <Link to={"/basket"} className="icon-holder">
                   <FaShoppingCart />
                 </Link>
-                <button className="sign-in-btn font-400 font-size-18">Sign In</button>
+                <button className="sign-in-btn font-400 font-size-18">
+                  Sign In
+                </button>
               </div>
             </div>
           </div>
