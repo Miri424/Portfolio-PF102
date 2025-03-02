@@ -19,14 +19,15 @@ import "../../assets/scss/themes/dark.scss";
 import "../../assets/scss/pages/Admin/ProductTable.scss"
 
 let INFORMATIONAL = {
-// Salam Müəllim. Bu fayl, əsas SCSS fayllarını import etmək üçün istifadə olunur. Folderdə axtarmaq yerinə,
-// birbaşa yuxarıdaki importlar vasitəsilə onları alıb edib lazımi fayllarda istifadə etmək mümkündür. Həmçinin,
-// ctrl+click ilə uyğun fayllara tez keçid etmək olar. Importlar kateqoriyalar üzrə təşkil olunub
-// və bu, layihənin daha səliqəli qalmasına kömək edir:
-//
-// - Əsas üslublar (reset, typography, utilities)
-// - Ümumi üslublar (fonts, globals)
-// - Komponentlər (button, input, modal, navbar, card) => modal istifadə olunmadı
-// - Layout (container, header, footer, banner)
-// - Temalar (light, dark) => (bunlar istifadə olunmadı təbiki)
-}
+    // Salam Müəllim. Bu fayl, əsas SCSS fayllarını import etmək üçün istifadə olunur. Folderdə axtarmaq yerinə,
+    // birbaşa yuxarıdaki importlar vasitəsilə onları alıb edib lazımi fayllarda istifadə etmək mümkündür. Həmçinin,
+    // bu faylın əsas məqsədi tez-tez class əlavələri ehtiyacı olduqda fayllara sürətli keçid imkanı verməkdir.
+    // ctrl+click ilə uyğun fayllara tez keçid etmək olar. Importlar kateqoriyalar üzrə təşkil olunub
+    // və bu, layihənin daha səliqəli qalmasına kömək edir:
+    //
+    // - Əsas üslublar (reset, typography, utilities)
+    // - Ümumi üslublar (fonts, globals)
+    // - Komponentlər (button, input, modal, navbar, card) => modal istifadə olunmadı
+    // - Layout (container, header, footer, banner)
+    // - Temalar (light, dark) => (bunlar istifadə olunmadı təbiki)
+    }    

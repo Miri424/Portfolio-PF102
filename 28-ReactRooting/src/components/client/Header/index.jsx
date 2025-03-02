@@ -13,6 +13,7 @@ const HeaderClient = () => {
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"/products"}>Products</NavLink>
               <NavLink to={"/favorites"}>Favorites</NavLink>
+              <NavLink to={"/basket"}>Basket</NavLink>
               <button>
                 <NavLink to={"/admin"}>Admin</NavLink>
               </button>

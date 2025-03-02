@@ -1,11 +1,15 @@
-import { Link, NavLink } from "react-router-dom";
-// import { FaRegHeart, FaHeart } from "react-icons/fa";
-
+import React from "react";
+import { useBasket } from "../../Context/BasketContext";
+import { Link } from "react-router-dom";
 import styles from "./index.module.scss";
 import FavoriteIcons from "../FavoriteIcons";
 
 const ProductItem = ({ products }) => {
-  console.log(products);
+  const { addToBasket } = useBasket();
+
+  const handleAddToBasket = (product) => {
+    addToBasket(product);
+  };
 
   return (
     <div className={styles["product-container"]}>
@@ -17,11 +21,11 @@ const ProductItem = ({ products }) => {
           }`}
         >
           <div className={styles.imgDiv}>
-          <img
-            src={product.image}
-            alt=""
-            className={styles["product-card-img"]}
-          />
+            <img
+              src={product.image}
+              alt=""
+              className={styles["product-card-img"]}
+            />
           </div>
           <h2>{product.name}</h2>
           <p className={styles.price}>{product.price}</p>
@@ -32,9 +36,12 @@ const ProductItem = ({ products }) => {
             <Link to={`/products/${product.id}`}>Go To Details</Link>
           </button>
           <div className={styles.iconHolder}>
-            <FavoriteIcons  product={product}/>
+            <FavoriteIcons product={product} />
           </div>
-          
+
+          <button onClick={() => handleAddToBasket(product)}>
+            Add to Basket
+          </button>
         </div>
       ))}
     </div>

@@ -6,9 +6,7 @@ import TodoList from "./Components/TodoList";
 import "./App.css"
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState<Todo[]>(
-    JSON.parse(localStorage.getItem("todos") || "[]")
-  );
+  const [todos, setTodos] = useState<Todo[]>(JSON.parse(localStorage.getItem("todos") || "[]"));
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));

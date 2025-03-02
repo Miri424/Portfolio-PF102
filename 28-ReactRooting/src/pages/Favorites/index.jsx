@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import "./index.scss";
 
-const Favorites = ({products}) => { // bilmirem nece gonderim productsi props kimi.
+const Favorites = ({products}) => { // bilmirem nece gonderim productsi props kimi.   
     
   const { favorites, toggleFavorites, clearAllFavs } = useContext(FavoritesContext);
 
@@ -28,7 +28,7 @@ const Favorites = ({products}) => { // bilmirem nece gonderim productsi props ki
               </Link>
               <button
                 className="favRemoveBtn"
-                onClick={() => toggleFavorites(product.id) }
+                onClick={() => toggleFavorites(product) }
               >
                 Remove
               </button>

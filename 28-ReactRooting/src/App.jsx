@@ -9,6 +9,7 @@ import HomeAdmin from "./pages/homeAdmin";
 import ProductsAdmin from "./components/admin/productsAdmin";
 import ProductDetails from "./components/client/ProductDetails";
 import Favorites from "./pages/Favorites";
+import Basket from "./components/client/Basket";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<ClientLayout />}>
           <Route index element={<Home />} />
           <Route path="favorites" element={<Favorites />} />
+            <Route path="basket" element={<Basket />} />
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<ProductDetails />} />
         </Route>
