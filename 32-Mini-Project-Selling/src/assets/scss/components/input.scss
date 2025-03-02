@@ -1,0 +1,11 @@
+.input {
+  padding: 6px 6px;
+  max-width: 120px;
+  max-height: 45px;
+  background-color: white;
+  border-radius: 12px;
+  border: rgba(128, 128, 128, 0.448) 1px solid;
+}
+.input ::placeholder {
+  color: white;
+}

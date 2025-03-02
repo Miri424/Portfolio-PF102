@@ -1,0 +1,51 @@
+.primary-button,
+.secondary-button {
+  font-size: 11px;
+  padding: 12px 42px;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+  font-weight: 550;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: black;
+    color: white;
+    border: 2px black solid;
+  }
+}
+
+.secondary-button {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 650;
+  margin-left: 4px;
+  transition: all 0.3s ease-in-out;
+
+
+  &:hover {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary-button,
+  .secondary-button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .primary-button,
+  .secondary-button {
+    font-size: 12px;
+    padding: 8px 25px;
+  }
+}

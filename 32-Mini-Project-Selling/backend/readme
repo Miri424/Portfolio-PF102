@@ -1,0 +1,9 @@
+Salam muellim. siz frontda deploy etme yolunu gostermistiniz amma men backendde yazdigim ucun
+deploy etme usulunu bilmedim. ona gore siz cetinlik cekmeyesiniz deye kommandi bura buraxiram run etmeniz
+ucun = > {
+npx json-server --watch backend/db/index.json --port 5000
+}
+
+
+// !!
+oldugunuz fayl direktoruna diqqet edin. eger rootdasinizsa yapistirmaniz kifayet edecek.

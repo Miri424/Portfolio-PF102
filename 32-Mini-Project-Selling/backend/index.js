@@ -1,0 +1,1 @@
+// package json da qosulmaq ucun rootda bir index js olmalidi kimi gorurem. 4 cu setr
