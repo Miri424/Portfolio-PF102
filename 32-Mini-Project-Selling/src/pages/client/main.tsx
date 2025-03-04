@@ -1,14 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
+import Navbar from "../../layouts/client/Navbar/navbar";
+import Footer from "../../layouts/client/Footer/footer";
+import "../../assets/scss/main.scss"
 
 const ClientLayout = () => {
   return (
     <>
-    <main />
-    <Outlet /> 
-    <main />    
+      <Navbar />
+      <Outlet />
+      <section className="bg-white">
+        <Footer />
+      </section>
     </>
-)
-}
+  );
+};
 
-export default ClientLayout
+export default ClientLayout;

@@ -1,0 +1,92 @@
+.experience-container {
+  padding: 50px 0;
+  background-color: #fff;
+
+  .row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .left-side {
+    flex: 1;
+    position: relative; 
+
+    .image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; 
+    }
+
+    .trusted {
+      position: absolute;
+      bottom: 20px; 
+      left: 20px; 
+      background-color: #46ddb0;
+      padding: 10px 20px;
+      color: #fff;
+
+      .merchant {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .year {
+        font-size: 16px;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .right-side {
+    flex: 1;
+
+    h3 {
+      font-size: 13px;
+      color: #adb5bd;
+      letter-spacing: 1.8px;
+      font-weight: 500;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: #000;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #808080;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 6px 20px;
+      background-color: black;
+      border: 2px solid white;
+      color: white;
+      font-size: 13px;
+      font-weight: 550;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.main-holder {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+
+  .title-holder {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .small-title {
+      color: #888;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .big-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  .services-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .row-holder {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .service-box {
+        display: flex;
+        width: 350px;
+        padding: 20px;
+        gap: 15px;
+
+        .icon-holder {
+          margin-top: 5px;
+
+          .orange-icon {
+            color: #ff6b00;
+            font-size: 30px;
+          }
+        }
+
+        .text-holder {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .service-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #333;
+          }
+
+          .service-text {
+            color: #666;
+            line-height: 1.5;
+          }
+
+          .link-holder {
+            color: #ff6b00;
+            text-decoration: none;
+            margin-top: 5px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-holder {
+    .services-holder {
+      .row-holder {
+        flex-direction: column;
+        align-items: center;
+
+        .service-box {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
+

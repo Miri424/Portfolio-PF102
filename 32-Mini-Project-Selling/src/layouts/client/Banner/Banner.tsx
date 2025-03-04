@@ -3,7 +3,7 @@ import "../../../assets/scss/main.scss";
 const Banner = () => {
   return (
     <div className="background-image">
-      <div className="mx-auto">
+      <div className="mx-auto content">
         <div className="content-holder max-w-600 ml-68 mt-24">
           <h2 className="font-size-60 white">Shop With Us</h2>
           <p className="font-size-14 white max-w-600 pb-6 font-size-12">

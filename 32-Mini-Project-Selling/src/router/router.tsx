@@ -3,6 +3,8 @@ import ClientLayout from "../pages/client/main";
 import NotFound from "../pages/client/error/NotFound";
 import AdminLayout from "../pages/admin/main";
 import Home from "../pages/client/home/HomePage";
+import BasketPage from "../pages/client/cart/CartPage";
+import ProductDetails from "../pages/client/Details/Details";
 
 const RouterApp = () => {
   return (
@@ -10,8 +12,8 @@ const RouterApp = () => {
       <Routes>
         <Route path="/" element={<ClientLayout />}>
           <Route index element={<Home />} />
-          {/* <Route path="product/:id" element={<ProductDetails />} /> */}
-          {/* <Route path="basket" element={<Basket />} /> */}
+          <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="basket" element={<BasketPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
 

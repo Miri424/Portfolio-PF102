@@ -8,7 +8,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "favourites": 29,
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
       "price": 12,
-      "sold": 123
+      "sold": 123,
+      "category": "Hoodies"
     }
   ]
 }

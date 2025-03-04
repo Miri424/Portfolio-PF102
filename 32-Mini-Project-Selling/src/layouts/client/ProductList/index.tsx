@@ -1,51 +1,21 @@
-import type React from "react";
-import { useEffect, useState } from "react";
-import { getAllProducts } from "../../../services/API/index.ts";
-import type { Product } from "../../../types/index.ts";
-import NotFound from "../../../pages/client/error/NotFound.tsx";
+import type { DetailsProduct, Product } from "../../../types";
 import { Heart } from "lucide-react";
 import styles from "./ProductsList.module.scss";
-import { ClipLoader } from "react-spinners";
+import { useBasket } from "../../../Context/Cart/useBasket";
+import { useProductDetails } from "../../../Context/Cart/details";
+import { useNavigate } from "react-router-dom";
 
-const ProductsList: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+const ProductsList: React.FC<{ products: DetailsProduct[] }> = ({
+  products,
+}) => {
+  const nav = useNavigate();
+  const { addToBasket } = useBasket();
+  const { addToDetails } = useProductDetails();
 
-  const fetchProducts = async () => {
-    try {
-      const data = await getAllProducts();
-      setProducts(data);
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
-      } else {
-        setError("Məhsullar alinarkən xəta baş verdi");
-      }
-    } finally {
-      setLoading(false);
-    }
+  const handleAddToDetails = (product: Product | any) => {
+    addToDetails(product);
+    nav(`/product/${product.id}`);
   };
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className={styles.loadingContainer}>
-        <ClipLoader color="#000000" size={50} />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="text-center align-center">
-        <NotFound />
-      </div>
-    );
-  }
 
   return (
     <section className={styles.productsSection}>
@@ -66,18 +36,22 @@ const ProductsList: React.FC = () => {
               </div>
               <div className={styles.productInfo}>
                 <h3 className={styles.productTitle}>{product.name}</h3>
-                <div className={styles.ratingContainer}>
-                  <span className={styles.ratingText}>{product.rating}</span>
-                  <span className={styles.reviewCount}>
-                    {product.favourites}
-                  </span>
-                </div>
                 <p className={styles.productDescription}>
                   {product.description}
                 </p>
                 <div className={styles.productActions}>
-                  <button className={styles.cartButton}>CART</button>
-                  <button className={styles.viewButton}>VIEW</button>
+                  <button
+                    className={styles.cartButton}
+                    onClick={() => addToBasket(product)}
+                  >
+                    CART
+                  </button>
+                  <button
+                    className={styles.viewButton}
+                    onClick={() => handleAddToDetails(product)}
+                  >
+                    VIEW
+                  </button>
                 </div>
               </div>
             </div>

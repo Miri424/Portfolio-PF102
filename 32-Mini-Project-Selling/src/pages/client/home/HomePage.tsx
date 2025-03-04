@@ -1,26 +1,27 @@
-import Navbar from "../../../layouts/client/Navbar/navbar";
-import Footer from "../../../layouts/client/Footer/footer";
 import Banner from "../../../layouts/client/Banner/Banner";
 import Products from "../../../layouts/client/Products/products";
 import Experience from "../../../layouts/client/Experience/experience";
-import "../../../assets/scss/main.scss"
+import "../../../assets/scss/main.scss";
+import OurServices from "../../../layouts/client/Alt/services";
+import Leadership from "../../../layouts/client/Team";
+
 const Home = () => {
   return (
     <>
-      <section>
-        <Navbar />
-      </section>
       <section>
         <Banner />
       </section>
       <section>
         <Products />
       </section>
-      <section className="w-100 bg-white">
+      <section>
         <Experience />
       </section>
-      <section>
-        <Footer />
+      <section className="bg-white">
+        <Leadership />
+      </section>
+      <section className="bg-white">
+        <OurServices />
       </section>
     </>
   );
