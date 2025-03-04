@@ -14,12 +14,30 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+    margin: 15px;
+  }
 }
 
 .background {
-    width: 100%;
-    height: 100%;
-    background-color: black ;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
 .imageWrapper {
@@ -39,6 +57,11 @@
       transform: scale(1.05);
     }
   }
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .productInfo {
@@ -47,32 +70,58 @@
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .productName {
   font-size: 32px;
   font-weight: bold;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
 }
 
 .productDescription {
   font-size: 18px;
-  color: #555;
+  color: #aaa;
   line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .productPrice {
   font-size: 24px;
   color: #28a745;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .productFavourites,
 .productSold,
 .productRating {
   font-size: 16px;
-  color: #555;
+  color: #aaa;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .backButton {
@@ -88,5 +137,10 @@
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.518);
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
