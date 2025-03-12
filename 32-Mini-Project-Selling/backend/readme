@@ -4,6 +4,5 @@ ucun = > {
 npx json-server --watch backend/db/index.json --port 5000
 }
 
-
 // !!
 oldugunuz fayl direktoruna diqqet edin. eger rootdasinizsa yapistirmaniz kifayet edecek.
