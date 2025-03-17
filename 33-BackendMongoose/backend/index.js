@@ -1,17 +1,24 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const postRoutes = require('./routes/postRouter');
-const { connectDB } = require('./config/db');
-
+const { connectDB } = require('./config/db');  
+const postRoutes = require('./routes/postRouter'); 
+const categoryRouter = require('./routes/categoryRouter'); 
+const authRouter = require('./routes/authRouter')
 dotenv.config();
 const app = express();
+
 connectDB();
 
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/posts', postRoutes);
+app.use('/api/posts', postRoutes); 
+app.use('/api/categories', categoryRouter);  
+app.use('/api/register',  authRouter)
+app.use("/uploads", express.static("uploads"));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

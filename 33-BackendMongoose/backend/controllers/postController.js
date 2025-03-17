@@ -1,9 +1,12 @@
 const Post = require('../models/postModel');
+const Category = require('../models/categoryModel');
 
  const getPosts = async (req, res) => {
   try {
-    const posts = await Post.find();
-    res.json(posts);
+    const posts = await Post.find().populate('categoryId', 'name');
+    res.json({
+        data: posts
+    });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }
@@ -11,7 +14,7 @@ const Post = require('../models/postModel');
 
  const getPostById = async (req, res) => {
   try {
-    const post = await Post.findById(req.params.id);
+    const post = await Post.findById(req.params.id).populate('categoryId', 'name');;
     if (!post) {
         return res.status(404).json({ message: 'Post not found' });
     }
@@ -21,13 +24,69 @@ const Post = require('../models/postModel');
   }
 };
 
- const createPost = async (req, res) => {
+const createPost = async (req, res) => {
   try {
-    const { title, category, image, content } = req.body;
-    const newPost = new Post({ title, category, image, content });
+    const { title, categoryId, content, date } = req.body;
+    const imageUrl = `http://localhost:5000/${req.file.path}`
+    console.log(req.file);
+
+    if (!title || !categoryId || !content || !date) {
+      return res.status(400).json({ message: "All fields are required." });
+    }
+
+    const newPost = new Post({
+      title,
+      categoryId,
+      content,
+      image: imageUrl,
+      date,
+    });
+
     await newPost.save();
-    
-    res.status(201).json(newPost);
+    res.status(201).json({ message: "Post created successfully!", post: newPost });
+  } catch (error) {
+    res.status(500).json({ message: "Error creating post", error: error.message });
+  }
+};
+
+
+const getCategories = async (req, res) => {
+  try {
+    const categories = await Category.find();
+    res.json(categories);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+
+const createCategory = async (req, res) => {
+  try {
+    const { name } = req.body; 
+
+    if (!name) {
+      return res.status(400).json({ message: 'Name is required' });
+    }
+
+    const newCategory = new Category({ name });  
+    await newCategory.save();
+
+    res.status(201).json({
+      message: 'Category created successfully',
+      category: newCategory
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+}
+
+const deleteCategory = async (req, res) => {
+  try {
+    const deletedCategory = await Category.findByIdAndDelete(req.params.id);
+    if (!deletedCategory){
+        return res.status(404).json({ message: 'Post not found' });
+    }
+    res.json({ message: 'success' });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -37,7 +96,7 @@ const updatePost = async (req, res) => {
   try {
     const updatedPost = await Post.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updatedPost) {
-        return res.status(404).json({ message: '404 not found' });
+        return res.status(404).json({ message: 'Post not found' });
     }
     res.json(updatedPost);
   } catch (error) {
@@ -57,11 +116,25 @@ const deletePost = async (req, res) => {
   }
 };
 
+// burda sehv upload etmisdim sekilleri ona gore bele bir funskiya yazmali oldum.
+const deleteAll = async (req, res) => {
+    try {
+    await Post.deleteMany();
+    res.json({ message: 'All posts deleted' });
+} catch (error) {
+    res.status(500).json({ message: error.message });
+}
+}
 
-exports.modules = {
+
+module.exports = {
     getPosts,
     getPostById,
     createPost, 
     updatePost,
-    deletePost
+    deletePost,
+    deleteAll,
+    createCategory,
+    getCategories,
+    deleteCategory
 } 

@@ -1,19 +1,9 @@
-import React from 'react'
-import ProductItem from './ProductItem'
+import React from "react";
+import ProductItem from "./ProductItem";
+import "./productList.css"
 
 const ProductList = () => {
+  return <ProductItem />;
+};
 
-    const products = async () => {
-        const response = await axios()
-    }   
-
-  return (
-    <div className='container'>
-        <div className='product-container'>
-            <ProductItem />
-        </div>
-    </div>
-  )
-}
-
-export default ProductList
+export default ProductList;
