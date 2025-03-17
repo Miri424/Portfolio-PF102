@@ -242,9 +242,27 @@
     margin: 0 auto;
   }
 
+  .viewButton {
+    padding:5px 10px;
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 50px;
+    min-width: 70px;
+  }
+
+  .cartButton {
+    border: 1px black solid;
+    max-height: 50px;
+    min-width: 70px;
+    padding:5px 10px;
+    max-width: 70px;
+    min-width: 70px
+  }
+
+
   .productActions {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
   }
   
 }

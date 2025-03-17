@@ -2,6 +2,7 @@ import "../../../assets/scss/main.scss";
 
 const Banner = () => {
   return (
+    <div className="container">
     <div className="background-image">
       <div className="mx-auto content">
         <div className="content-holder ml-68">
@@ -16,6 +17,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

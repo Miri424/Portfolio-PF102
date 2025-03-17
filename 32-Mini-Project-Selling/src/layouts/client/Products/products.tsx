@@ -16,7 +16,7 @@ export default function PopularProducts() {
         const data = await getAllProducts();
         setProducts(data);
       } catch (err) {
-        setError("Məhsullar yüklənərkən xəta baş verdi");
+        setError("Error fetching products");
       } finally {
         setLoading(false);
       }

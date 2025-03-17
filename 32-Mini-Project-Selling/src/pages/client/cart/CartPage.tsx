@@ -12,7 +12,7 @@ const BasketPage = () => {
   );
 
   const srocnuYazdimAdTapmadim = () =>  {
-    toast.success("Hello, Your Computer Has Virus ")
+    toast.success("Hello, Your Computer Has Virus")
   }
 
   if (basket.length === 0) {
