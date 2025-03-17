@@ -3,7 +3,11 @@ import ProductItem from "./ProductItem";
 import "./productList.css"
 
 const ProductList = () => {
-  return <ProductItem />;
+  return (
+    <>
+    <ProductItem />;
+    </>
+  )
 };
 
 export default ProductList;

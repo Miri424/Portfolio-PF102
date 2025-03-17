@@ -25,11 +25,13 @@ const SearchSort = ({ setProducts }) => {
         },
       });
       setProducts(response.data.data); 
+      console.log(products);
     } catch (error) {
       console.error("Failed to fetch products:", error);
     }
   };
-
+  
+  
   useEffect(() => {
     fetchProducts();
   }, [searchTerm, sortOption]);

@@ -1,11 +1,29 @@
 const Post = require('../models/postModel');
 const Category = require('../models/categoryModel');
 
- const getPosts = async (req, res) => {
+const getPosts = async (req, res) => {
   try {
-    const posts = await Post.find().populate('categoryId', 'name');
+    const { search, sort } = req.query; 
+
+    let query = {};
+    if (search) {
+      query.title = { $regex: search, $options: "i" }; 
+    }
+
+    const sortOptions = {};
+    if (sort) {
+      if (sort === "title") {
+        sortOptions.title = 1;
+      } else if (sort === "date") {
+        sortOptions.createdAt = -1; 
+      } else if (sort === "category") {
+        sortOptions.categoryId = 1; 
+      }
+    }
+    
+    const posts = await Post.find(query).populate('categoryId', 'name').sort(sortOptions);
     res.json({
-        data: posts
+      data: posts
     });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
