@@ -108,11 +108,17 @@
   width: 18px;
   height: 18px;
   color: #666;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
     color: #ff3366;
   }
 }
+
+.heartIcon.filled {
+  color: red;
+}
+
 
 .productInfo {
   padding: 20px;

@@ -1,59 +1,78 @@
+import { toast, ToastContainer } from "react-toastify";
 import { useBasket } from "../../../Context/Cart/useBasket";
-import Navbar from "../../../layouts/client/Navbar/navbar";
 import styles from "./index.module.scss";
 import { Trash2 } from "lucide-react";
 
 const BasketPage = () => {
-  const { basket } = useBasket();
+  const { basket, increaseQuantity, decreaseQuantity, removeFromBasket } = useBasket();
 
   const totalPrice = basket.reduce(
-    (total, product) => total + product.price,
+    (total, product) => total + product.price * product.quantity,
     0
   );
+
+  const srocnuYazdimAdTapmadim = () =>  {
+    toast.success("Hello, Your Computer Has Virus ")
+  }
 
   if (basket.length === 0) {
     return (
       <div className={styles.emptyBasket}>
-        <p className="red">Your Basket is Empty!</p>
+        <p className="red pt-24">Your Basket is Empty!</p>
       </div>
     );
   }
 
   return (
     <>
-      <Navbar />
       <div className={styles.basketPage}>
-        <div className={styles.productsWrapper}>
-          {basket.map((product) => (
-            <div key={product.id} className={styles.fullScreenProduct}>
-              <img
-                src={product.image}
-                alt={product.name}
-                className={styles.productImage}
-              />
-              <div className={styles.productDetails}>
-                <h2 className={styles.productName}>{product.name}</h2>
-                <p className={styles.productDescription}>
-                  {product.description}
-                </p>
-                <span className={styles.productPrice}>
-                  ${product.price.toFixed(2)}
-                </span>
-                <button className={styles.removeButton}>
-                  <Trash2 size={20} />
-                  DELETE
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+        <h2>Shopping Basket</h2>
+
+        <table className={styles.basketTable}>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            {basket.map((product) => (
+              <tr key={product.id}>
+                <td>
+                  <img src={product.image} alt={product.name} className={styles.productImage} />
+                </td>
+                <td>{product.name}</td>
+                <td>${product.price.toFixed(2)}</td>
+                <td>
+                  <div className={styles.quantityControls}>
+                    <button onClick={() => decreaseQuantity(product.id)}>-</button>
+                    <span>{product.quantity}</span>
+                    <button onClick={() => increaseQuantity(product.id)}>+</button>
+                  </div>
+                </td>
+                <td>${(product.price * product.quantity).toFixed(2)}</td>
+                <td>
+                  <button className={styles.removeButton} onClick={() => removeFromBasket(product.id)}>
+                    <Trash2 size={18} />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
         <div className={styles.footer}>
           <div className={styles.totalSection}>
             <span>Total:</span>
             <span className={styles.totalPrice}>${totalPrice.toFixed(2)}</span>
           </div>
-          <button className={styles.deliverButton}>Deliver My Order</button>
+          <button className={styles.deliverButton} onClick={srocnuYazdimAdTapmadim}>Deliver My Order</button>
         </div>
+        <ToastContainer />
       </div>
     </>
   );

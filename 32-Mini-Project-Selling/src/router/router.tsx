@@ -5,6 +5,7 @@ import AdminLayout from "../pages/admin/main";
 import Home from "../pages/client/home/HomePage";
 import BasketPage from "../pages/client/cart/CartPage";
 import ProductDetails from "../pages/client/Details/Details";
+import WishlistPage from "../pages/client/Wishlist/Wishlist";
 
 const RouterApp = () => {
   return (
@@ -14,6 +15,7 @@ const RouterApp = () => {
           <Route index element={<Home />} />
           <Route path="product/:id" element={<ProductDetails />} />
           <Route path="basket" element={<BasketPage />} />
+          <Route path="wishlist" element={<WishlistPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
 
